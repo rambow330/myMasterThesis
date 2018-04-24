@@ -146,7 +146,7 @@
 %%
 %% label in the head 页眉页脚
 %%
-\def\BIT@label@headschoolname{北京理工大学硕士学位论文}
+\def\BIT@label@headschoolname{北京理工大学工程硕士学位论文}
 
 %% 当前模板的版本
 \newcommand{\version}{\BIT@value@templateversion}
@@ -259,7 +259,7 @@ footskip=0.7cm% 页脚 1.8cm %
 \fancypagestyle{BIT@headings}{%
   \fancyhf{}
   \fancyfoot[C]{\songti\zihao{5} \thepage}
-  \fancyhead[C]{\ifBIT@master\zihao{5}{\songti 北京理工大学硕士学位论文}
+  \fancyhead[C]{\ifBIT@master\zihao{5}{\songti 北京理工大学工程硕士学位论文}
                 \else\zihao{5}{\songti 北京理工大学博士学位论文}\fi}
   }
 
