@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.4.17)  25 APR 2018 15:17
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.4.17)  26 APR 2018 01:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2845,23 +2845,26 @@ Overfull \hbox (4.015pt too wide) in paragraph at lines 62--62
 
  (./chapters/chapter2.tex
 第2章
-File: figures/fig2-0.jpg Graphic file (type QTm)
-<use  "figures/fig2-0.jpg" > [7
+File: figures/fig2-1.jpg Graphic file (type QTm)
+<use  "figures/fig2-1.jpg" > [7
 
 
 
-] [8] [9] [10] [11]
-File: figures/powerlaw.png Graphic file (type QTm)
+] [8] [9] [10]
 
-<use  "figures/powerlaw.png" > [12]
-File: figures/fig2-1.png Graphic file (type QTm)
- <use  "figures/fig2-1.png" > [13] [14]
+LaTeX Warning: Reference `fig:fig2-2' on page 11 undefined on input line 72.
+
+[11]
 File: figures/fig2-2.png Graphic file (type QTm)
+ <use  "figures/fig2-2.png" >
+File: figures/fig2-3.png Graphic file (type QTm)
+ <use  "figures/fig2-3.png" > [12] [13]
+File: figures/fig2-4.png Graphic file (type QTm)
 
-<use  "figures/fig2-2.png" > [15]) [16]
+<use  "figures/fig2-4.png" > [14]) [15]
 \openout2 = `chapters/conclusion.aux'.
 
- (./chapters/conclusion.tex) [17
+ (./chapters/conclusion.tex) [16
 
 
 
@@ -2877,7 +2880,7 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-[18
+[17
 
 
 ]
@@ -2891,10 +2894,10 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-[19]) [20]
+[18]) [19]
 \openout2 = `chapters/thanks.aux'.
 
- (./chapters/thanks.tex) [21
+ (./chapters/thanks.tex) [20
 
 
 
@@ -2911,14 +2914,17 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 132.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.65625pt have occurred.
 
+
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
- 45427 strings out of 493005
- 923266 string characters out of 6134596
- 942357 words of memory out of 5000000
- 48667 multiletter control sequences out of 15000+600000
- 545837 words of font info for 144 fonts, out of 8000000 for 9000
+ 45411 strings out of 493005
+ 922608 string characters out of 6134596
+ 941486 words of memory out of 5000000
+ 48652 multiletter control sequences out of 15000+600000
+ 545829 words of font info for 143 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  63i,12n,78p,10410b,975s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on demo.pdf (31 pages).
+Output written on demo.pdf (30 pages).
