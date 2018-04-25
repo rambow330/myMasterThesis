@@ -8,5 +8,5 @@ bibtex ${BASE}
 xelatex -no-pdf --interaction=nonstopmode ${BASE}
 xelatex --interaction=nonstopmode ${BASE}
 
-# start "" "${BASE}.pdf"
+ open "" "${BASE}.pdf"
 
