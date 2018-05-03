@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.4.17)  26 APR 2018 01:29
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.4.17)  4 MAY 2018 05:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2347,7 +2347,8 @@ Package: xeCJK-listings 2017/05/15 v3.4.8 xeCJK patch file for listings
 \l__xeCJK_listings_flag_int=\count365
 )
 (./demo.aux (./chapters/abstract.aux) (./chapters/chapter1.aux)
-(./chapters/chapter2.aux) (./chapters/conclusion.aux) (./chapters/thanks.aux))
+(./chapters/chapter2.aux) (./chapters/chapter3.aux) (./chapters/chapter4.aux)
+(./chapters/chapter5.aux) (./chapters/conclusion.aux) (./chapters/thanks.aux))
 \openout1 = `demo.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
@@ -2571,6 +2572,33 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 
 
 ]
+! Undefined control sequence.
+\makeInfo ... \noindent \BIT@label@classification 
+                                                  } \BIT@value@classificatio...
+l.57 
+     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\makeInfo ...\\ {\heiti \zihao {5} \BIT@label@UDC 
+                                                  } \BIT@value@UDC } \par \b...
+l.57 
+     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--57
+
+ []
+
 *************************************************
 * fontspec warning: "script-not-exist"
 * 
@@ -2811,24 +2839,24 @@ Overfull \hbox (4.015pt too wide) in paragraph at lines 62--62
 ]) [2
 
 
-] (./demo.toc)
+] (./demo.toc [3
+
+
+])
 \tf@toc=\write5
 \openout5 = `demo.toc'.
 
- [3
-
-
-] (./demo.lof)
+ [4] (./demo.lof)
 \tf@lof=\write6
 \openout6 = `demo.lof'.
 
- [4
+ [5
 
 ] (./demo.lot)
 \tf@lot=\write7
 \openout7 = `demo.lot'.
 
- [5
+ [6
 
 ]
 \openout2 = `chapters/chapter1.aux'.
@@ -2856,20 +2884,542 @@ LaTeX Warning: Reference `fig:fig2-2' on page 11 undefined on input line 72.
 
 [11]
 File: figures/fig2-2.png Graphic file (type QTm)
- <use  "figures/fig2-2.png" >
+ <use  "figures/fig2-2.png" > [12]
 File: figures/fig2-3.png Graphic file (type QTm)
- <use  "figures/fig2-3.png" > [12] [13]
+ <use  "figures/fig2-3.png" > [13]
 File: figures/fig2-4.png Graphic file (type QTm)
 
 <use  "figures/fig2-4.png" > [14]) [15]
-\openout2 = `chapters/conclusion.aux'.
+\openout2 = `chapters/chapter3.aux'.
 
- (./chapters/conclusion.tex) [16
+ (./chapters/chapter3.tex
+第3章
+[16
 
 
 
 ]
-(./demo.bbl
+File: figures/fig3-1.png Graphic file (type QTm)
+ <use  "figures/fig3-1.png" > [17]
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.57 \usepackage
+                {algorithm}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.58 \usepackage
+                {algpseudocode}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.59 \usepackage
+                {amsmath}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: \algorithmicrequire undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.60 \renewcommand{\algorithmicrequire}
+                                       {\textbf{Input:}}  % Use Input in the...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: \algorithmicensure undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 \renewcommand{\algorithmicensure}
+                                      {\textbf{Output:}} % Use Output in the...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Environment algorithm undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.63 \begin{algorithm}
+                      [h]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package caption Error: \caption outside float.
+
+See the caption package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.64   \caption
+               {An example for format For \& While Loop in Algorithm}
+If you do not understand this error, please take a closer look
+at the documentation of the `caption' package, especially the
+section about errors.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Environment algorithmic undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.65   \begin{algorithmic}
+                          [1]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.66     \For
+             {each $i\in [1,9]$}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.67       \State
+                  initialize a tree $T_{i}$ with only a leaf (the root);
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.68       \State
+                  $T=T\cup T_{i};$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.69     \EndFor
+                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.70     \ForAll
+                 {$c$ such that $c\in RecentMBatch(E_{n-1})$}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.72       \State
+                  $T=T\cup PosSample(c)$;
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.74     \EndFor
+                ;
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.75     \For
+             {$i=1$; $i<n$; $i++$ }
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.76       \State
+                  $//$ Your source here;
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.77     \EndFor
+                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.78     \For
+             {$i=1$ to $n$}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.79       \State
+                  $//$ Your source here;
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.80     \EndFor
+                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.81     \State
+                $//$ Reusing recent base classifiers.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.83     \While
+                {$(|E_n| \leq L_1 )and( D \neq \phi)$}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.84       \State
+                  Selecting the most recent classifier $c_i$ from $D$;
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.85       \State
+                  $D=D-c_i$;
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.86       \State
+                  $E_n=E_n+c_i$;
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.87     \EndWhile
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \begin{document} ended by \end{algorithmic}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.89   \end{algorithmic}
+                        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: \begin{document} ended by \end{algorithm}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.90 \end{algorithm}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[18] [19]
+File: figures/fig3-2.png Graphic file (type QTm)
+ <use  "figures/fig3-2.png" > [20]
+
+LaTeX Warning: Reference `eqn:jiedianyingxiangzhi' on page 21 undefined on inpu
+t line 170.
+
+File: figures/fig3-3.png Graphic file (type QTm)
+<use  "figures/fig3-3.png" > [21] [22]
+File: figures/fig3-4.png Graphic file (type QTm)
+ <use  "figures/fig3-4.png" > [23])
+[24]
+\openout2 = `chapters/chapter4.aux'.
+
+ (./chapters/chapter4.tex
+第4章
+[25
+
+
+
+] [26]
+File: figures/fig4-1.png Graphic file (type QTm)
+ <use  "figures/fig4-1.png" >
+Overfull \hbox (87.52357pt too wide) in paragraph at lines 89--91
+[]\TU/STSong(1)/m/n/12.045 标 签 传 播 过 程 是 不 断 迭 代 执 行 的，|  因 此 整 个 算 法 的 时 间 复 杂
+ 度 为 $\OT1/cmr/m/n/12.045 2\OML/cmm/m/it/12.045 O\OT1/cmr/m/n/12.045 (\OMS/cmsy
+/m/n/12.045 j\OML/cmm/m/it/12.045 V\OMS/cmsy/m/n/12.045 j\OT1/cmr/m/n/12.045 ) 
++ 2\OML/cmm/m/it/12.045 tO\OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 v\OMS/cmsy/
+m/n/12.045 j\OML/cmm/m/it/12.045 E\OMS/cmsy/m/n/12.045 j\OML/cmm/m/it/12.045 lo
+g\OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 v\OMS/cmsy/m/n/12.045 j\OML/cmm/m/it
+/12.045 E\OMS/cmsy/m/n/12.045 j\OT1/cmr/m/n/12.045 /\OMS/cmsy/m/n/12.045 j\OML/
+cmm/m/it/12.045 V\OMS/cmsy/m/n/12.045 j\OT1/cmr/m/n/12.045 ))$\TU/STSong(1)/m/n
+/12.045 。| 
+ []
+
+) [27] [28]
+\openout2 = `chapters/chapter5.aux'.
+
+ (./chapters/chapter5.tex
+第5章
+[29
+
+
+
+] [30]
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.125     编号^^I^^I&N  &avgk &maxk &
+                                       minc &maxc &mu\\
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.127     1^^I&1000  &10 &50 &
+                              10 &50 &0.1~0.9\\
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.128     2 &1000  &10 &50 &
+                            20 &100 &0.1~0.9\\
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.129     3 &5000  &10 &50 &
+                            10 &50 &0.1~0.9\\
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.130     4 &5000  &10 &50 &
+                            20 &100 &0.1~0.9\\
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.131     5 &1000  &20 &50 &
+                            10 &50 &0.1~0.9\\
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.132     6 &1000  &20 &50 &
+                            20 &100 &0.1~0.9\\
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+
+Overfull \hbox (5.10391pt too wide) in paragraph at lines 137--139
+[]\TU/STSong(1)/m/n/12.045 再 生 成 四 组 具 有 重 叠 社 区 结 构 的 \TU/TimesNewRoman(0)/m/n
+/12.045 LFR \TU/STSong(1)/m/n/12.045 基 准 网 络 数 据 集，|  详 细 的 生 成 参 数 如 表[][]\TU/
+TimesNewRoman(0)/m/n/12.045 5.6[][]\TU/STSong(1)/m/n/12.045 示。| 
+ []
+
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.145     编号^^I^^I&N  &avgk &maxk &
+                                       minc &maxc &mu &on &om\\
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.145 ...I^^I&N  &avgk &maxk &minc &maxc &mu &on &
+                                                  om\\
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.147     7^^I&1000  &15 &50 &
+                              10 &50 &0.1 &100 &2~8\\
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.147     7^^I&1000  &15 &50 &10 &50 &0.1 &100 &
+                                                2~8\\
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.148     8 &1000  &15 &50 &
+                            10 &50 &0.3 &100 &2~8\\
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.148     8 &1000  &15 &50 &10 &50 &0.3 &100 &
+                                              2~8\\
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.149     9 &5000  &15 &50 &
+                            20 &100 &0.1 &100 &2~8\\
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.149     9 &5000  &15 &50 &20 &100 &0.1 &100 &
+                                               2~8\\
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.150     10 &5000  &15 &50 &
+                             20 &100 &0.3 &100 &2~8\\
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.150     10 &5000  &15 &50 &20 &100 &0.3 &100 &
+                                                2~8\\
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+[31] [32] [33]
+File: figures/fig5-1.png Graphic file (type QTm)
+ <use  "figures/fig5-1.png" >) [34]
+\openout2 = `chapters/conclusion.aux'.
+
+ (./chapters/conclusion.tex)
+[35
+
+
+
+] (./demo.bbl
 ! Misplaced alignment tab character &.
 l.76 ... Acm Transactions on Intelligent Systems &
                                                    Technology, 2012,
@@ -2880,7 +3430,7 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-[17
+[36
 
 
 ]
@@ -2894,10 +3444,10 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-[18]) [19]
+[37]) [38]
 \openout2 = `chapters/thanks.aux'.
 
- (./chapters/thanks.tex) [20
+ (./chapters/thanks.tex) [39
 
 
 
@@ -2905,7 +3455,8 @@ might try typing `S' now just to see what is salvageable.
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 132.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 132.
  (./demo.aux (./chapters/abstract.aux)
-(./chapters/chapter1.aux) (./chapters/chapter2.aux) (./chapters/conclusion.aux)
+(./chapters/chapter1.aux) (./chapters/chapter2.aux) (./chapters/chapter3.aux)
+(./chapters/chapter4.aux) (./chapters/chapter5.aux) (./chapters/conclusion.aux)
 (./chapters/thanks.aux))
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 132.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 132.
@@ -2919,12 +3470,12 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 45411 strings out of 493005
- 922608 string characters out of 6134596
- 941486 words of memory out of 5000000
- 48652 multiletter control sequences out of 15000+600000
+ 45514 strings out of 493005
+ 925476 string characters out of 6134596
+ 948207 words of memory out of 5000000
+ 48728 multiletter control sequences out of 15000+600000
  545829 words of font info for 143 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  63i,12n,78p,10410b,975s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on demo.pdf (30 pages).
+Output written on demo.pdf (50 pages).

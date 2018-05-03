@@ -42,9 +42,9 @@
 \def\BIT@label@major{学~~~~科~~~~专~~~~业}
 \def\BIT@label@title{论文题目}
 \def\BIT@label@author{作~~~~者~~~~姓~~~~名}
-\def\BIT@label@classification{中图分类号：}
+%\def\BIT@label@classification{中图分类号：}
 \def\BIT@label@confidential{密级}
-\def\BIT@label@UDC{UDC\!分类号：}
+%\def\BIT@label@UDC{UDC\!分类号：}
 \def\BIT@label@serialnumber{编号}
 \def\BIT@label@thesis{学位论文}
 \def\BIT@label@advisor{指~~~~导~~~~教~~~~师}
