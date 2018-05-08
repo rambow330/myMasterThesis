@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.4.17)  4 MAY 2018 05:09
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.4.17)  8 MAY 2018 11:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3249,169 +3249,15 @@ cmm/m/it/12.045 V\OMS/cmsy/m/n/12.045 j\OT1/cmr/m/n/12.045 ))$\TU/STSong(1)/m/n
 
 
 ] [30]
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.125     编号^^I^^I&N  &avgk &maxk &
-                                       minc &maxc &mu\\
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.127     1^^I&1000  &10 &50 &
-                              10 &50 &0.1~0.9\\
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.128     2 &1000  &10 &50 &
-                            20 &100 &0.1~0.9\\
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.129     3 &5000  &10 &50 &
-                            10 &50 &0.1~0.9\\
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.130     4 &5000  &10 &50 &
-                            20 &100 &0.1~0.9\\
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.131     5 &1000  &20 &50 &
-                            10 &50 &0.1~0.9\\
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.132     6 &1000  &20 &50 &
-                            20 &100 &0.1~0.9\\
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-
 Overfull \hbox (5.10391pt too wide) in paragraph at lines 137--139
 []\TU/STSong(1)/m/n/12.045 再 生 成 四 组 具 有 重 叠 社 区 结 构 的 \TU/TimesNewRoman(0)/m/n
 /12.045 LFR \TU/STSong(1)/m/n/12.045 基 准 网 络 数 据 集，|  详 细 的 生 成 参 数 如 表[][]\TU/
 TimesNewRoman(0)/m/n/12.045 5.6[][]\TU/STSong(1)/m/n/12.045 示。| 
  []
 
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.145     编号^^I^^I&N  &avgk &maxk &
-                                       minc &maxc &mu &on &om\\
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.145 ...I^^I&N  &avgk &maxk &minc &maxc &mu &on &
-                                                  om\\
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.147     7^^I&1000  &15 &50 &
-                              10 &50 &0.1 &100 &2~8\\
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.147     7^^I&1000  &15 &50 &10 &50 &0.1 &100 &
-                                                2~8\\
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.148     8 &1000  &15 &50 &
-                            10 &50 &0.3 &100 &2~8\\
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.148     8 &1000  &15 &50 &10 &50 &0.3 &100 &
-                                              2~8\\
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.149     9 &5000  &15 &50 &
-                            20 &100 &0.1 &100 &2~8\\
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.149     9 &5000  &15 &50 &20 &100 &0.1 &100 &
-                                               2~8\\
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.150     10 &5000  &15 &50 &
-                             20 &100 &0.3 &100 &2~8\\
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.150     10 &5000  &15 &50 &20 &100 &0.3 &100 &
-                                                2~8\\
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-[31] [32] [33]
+[31] [32]
 File: figures/fig5-1.png Graphic file (type QTm)
- <use  "figures/fig5-1.png" >) [34]
+ <use  "figures/fig5-1.png" > [33]) [34]
 \openout2 = `chapters/conclusion.aux'.
 
  (./chapters/conclusion.tex)
@@ -3472,7 +3318,7 @@ LaTeX Warning: There were undefined references.
 Here is how much of TeX's memory you used:
  45514 strings out of 493005
  925476 string characters out of 6134596
- 948207 words of memory out of 5000000
+ 948208 words of memory out of 5000000
  48728 multiletter control sequences out of 15000+600000
  545829 words of font info for 143 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
