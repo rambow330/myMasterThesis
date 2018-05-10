@@ -18,14 +18,14 @@ Fortunato S.
 \newblock Physics Reports: A Review Section of Physics Letters (Section C),
   2010\penalty0 (3/5): 75--174.
 
-\bibitem[M\ et~al.(2002)M and J]{2002Community}
-M G, J N M.
-\newblock Community structure in social and biological networks.\allowbreak[J].
+\bibitem[Girvan\ et~al.(2002)Girvan and Newman]{2002Community}
+Girvan M, Newman M E J.
+\newblock Community structure in social and biological networks\allowbreak[J].
 \newblock Proceedings of the National Academy of Sciences of the United States
   of America, 2002\penalty0 (12): 7821--7826.
 
-\bibitem[Jr\ et~al.(2009)Jr and Fulkerson]{Jr2009Maximal}
-Jr L R F, Fulkerson D R.
+\bibitem[Ford\ et~al.(2009)Ford and Fulkerson]{Jr2009Maximal}
+Ford L R J, Fulkerson D R.
 \newblock Maximal flow through a network\allowbreak[M].
 \newblock [S.l.]: Birkhäuser Boston, 2009: 243--248.
 
