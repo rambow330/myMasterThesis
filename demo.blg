@@ -1,0 +1,57 @@
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: demo.aux
+The style file: GBT7714-2005NLang.bst
+A level-1 auxiliary file: chapters/abstract.aux
+A level-1 auxiliary file: chapters/chapter1.aux
+A level-1 auxiliary file: chapters/chapter2.aux
+A level-1 auxiliary file: chapters/chapter3.aux
+A level-1 auxiliary file: chapters/chapter4.aux
+A level-1 auxiliary file: chapters/chapter5.aux
+A level-1 auxiliary file: chapters/conclusion.aux
+A level-1 auxiliary file: chapters/thanks.aux
+Database file #1: reference/chap1.bib
+Database file #2: reference/chapter1.bib
+Database file #3: reference/chapter2.bib
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+You've used 36 entries,
+            3354 wiz_defined-function locations,
+            1002 strings with 12631 characters,
+and the built_in function-call counts, 97735 in all, are:
+= -- 1705
+> -- 13134
+< -- 8600
++ -- 4615
+- -- 249
+* -- 1189
+:= -- 11177
+add.period$ -- 117
+call.type$ -- 36
+change.case$ -- 72
+chr.to.int$ -- 4150
+cite$ -- 36
+duplicate$ -- 8981
+empty$ -- 1853
+format.name$ -- 268
+if$ -- 21420
+int.to.chr$ -- 1
+int.to.str$ -- 37
+missing$ -- 0
+newline$ -- 198
+num.names$ -- 108
+pop$ -- 4463
+preamble$ -- 1
+purify$ -- 36
+quote$ -- 0
+skip$ -- 9130
+stack$ -- 0
+substring$ -- 4987
+swap$ -- 36
+text.length$ -- 72
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 341
+warning$ -- 0
+while$ -- 173
+width$ -- 0
+write$ -- 550
