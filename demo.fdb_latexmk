@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1525965695 "/Users/zhujie/Documents/0论文/myPaper/demo.tex" "demo.pdf" "demo" 1526018234
+["pdflatex"] 1526025345 "/Users/zhujie/Documents/0论文/myPaper/demo.tex" "demo.pdf" "demo" 1526028239
   "/Library/Fonts/Songti.ttc" 1506918728 66903940 a9cd359e4cf7fdfcf13db6a1890edad7 ""
   "/Users/zhujie/Documents/0论文/myPaper/demo.tex" 1525751207 3531 9ce0b5595bacd642ba4bf3181c44078b ""
-  "/dev/null" 1526018220 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "/dev/null" 1526028074 0 d41d8cd98f00b204e9800998ecf8427e ""
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1480098701 1288 655e228510b4c2a1abe905c368440826 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr9.tfm" 1480098701 1292 6b21b9c2c7bebb38aa2273f7ca0fb3af ""
@@ -153,8 +153,8 @@
   "/usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt" 1523942172 4129592 ebe7840f75e9bfff11fcd85ab41fa52b ""
   "/usr/local/texlive/2017/texmf.cnf" 1495593465 577 2b71d4d888f9e5560b2e99985915a9fa ""
   "BIT-thesis-grd.cls" 1524795386 27617 1a3c2cd7095ba6ad56e49f045cb62c80 ""
-  "demo.aux" 1525965695 8 a94a2480d3289e625eea47cd1b285758 ""
+  "demo.aux" 1526025345 8 a94a2480d3289e625eea47cd1b285758 ""
   "demo.tex" 1525751207 3531 9ce0b5595bacd642ba4bf3181c44078b ""
   (generated)
-  "demo.pdf"
   "demo.log"
+  "demo.pdf"
