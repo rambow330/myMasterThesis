@@ -1,4 +1,4 @@
-\begin{thebibliography}{36}
+\begin{thebibliography}{39}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \providecommand{\href}[2]{#2}
@@ -150,10 +150,11 @@ Getoor L, Friedman N, Koller D, et~al.
 \newblock Learning probabilistic models of link structure\allowbreak[J].
 \newblock Journal of Machine Learning Research, 2003, 3\penalty0 (4): 679--707.
 
-\bibitem[Xie\ et~al.(2013)Xie, Kelley, and Szymanski]{Xie2013Overlapping}
+\bibitem[Xie\ et~al.(2013{\natexlab{a}})Xie, Kelley, and
+  Szymanski]{Xie2013Overlapping}
 Xie J, Kelley S, Szymanski B K.
 \newblock Overlapping community detection in networks\allowbreak[M].
-\newblock [S.l.: s.n.], 2013.
+\newblock [S.l.: s.n.], 2013{\natexlab{a}}.
 
 \bibitem[Palla\ et~al.(2005)Palla, Dere~Nyi, Farkas, and
   Vicsek]{Palla2005Uncovering}
@@ -237,5 +238,27 @@ DJ W, SH S.
 \newblock Collectivedynamics of ’small-world’ networks\allowbreak[C].
 \newblock Nature.
 \newblock [S.l.: s.n.], 1998: 440--442.
+
+\bibitem[Leung\ et~al.(2009)Leung, Hui, Liò, and Crowcroft]{Leung2009Towards}
+Leung I X Y, Hui P, Liò P, et~al.
+\newblock Towards real-time community detection in large
+  networks\allowbreak[J].
+\newblock Physical Review E Statistical Nonlinear & Soft Matter Physics, 2009,
+  79\penalty0 (6 Pt 2): 066107.
+
+\bibitem[He\ et~al.(2014)He, Leng, Li, Yao, and Chen]{He2014A}
+He M, Leng M, Li F, et~al.
+\newblock A node importance based label propagation approach for community
+  detection\allowbreak[C].
+\newblock the seventh international conference on intelligent system and
+  knowledge engineering, iske 2012/the 1st international conference on
+  cognitive system and information processing, csip 2012.
+\newblock [S.l.: s.n.], 2014.
+
+\bibitem[Xie\ et~al.(2013{\natexlab{b}})Xie and Szymanski]{Xie2013LabelRank}
+Xie J, Szymanski B K.
+\newblock Labelrank: A stabilized label propagation algorithm for community
+  detection in networks\allowbreak[J].
+\newblock ., 2013{\natexlab{b}}: 138--143.
 
 \end{thebibliography}

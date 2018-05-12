@@ -4,13 +4,18 @@
 \addvspace {10.0pt}
 \addvspace {10.0pt}
 \addvspace {10.0pt}
+\contentsline {table}{\numberline {3.1}{\ignorespaces 计算机硬件配置\relax }}{27}{table.caption.14}
+\contentsline {table}{\numberline {3.2}{\ignorespaces 计算机软件配置\relax }}{27}{table.caption.15}
+\contentsline {table}{\numberline {3.3}{\ignorespaces 真实网络数据集\relax }}{28}{table.caption.16}
+\contentsline {table}{\numberline {3.4}{\ignorespaces LFR基准网络生成参数及其含义\relax }}{28}{table.caption.17}
+\contentsline {table}{\numberline {3.5}{\ignorespaces 六组LFR基准网络生成参数\relax }}{29}{table.caption.18}
+\contentsline {table}{\numberline {3.6}{\ignorespaces 真实网络的模块度实验结果\relax }}{33}{table.caption.22}
+\contentsline {table}{\numberline {3.7}{\ignorespaces 真实网络的模NMI实验结果\relax }}{33}{table.caption.23}
 \addvspace {10.0pt}
-\addvspace {10.0pt}
-\contentsline {table}{\numberline {5.1}{\ignorespaces 计算机硬件配置\relax }}{31}{table.caption.15}
-\contentsline {table}{\numberline {5.2}{\ignorespaces 计算机软件配置\relax }}{32}{table.caption.16}
-\contentsline {table}{\numberline {5.3}{\ignorespaces 真实网络数据集\relax }}{32}{table.caption.17}
-\contentsline {table}{\numberline {5.4}{\ignorespaces LFR基准网络生成参数及其含义\relax }}{33}{table.caption.18}
-\contentsline {table}{\numberline {5.5}{\ignorespaces 六组LFR基准网络生成参数\relax }}{33}{table.caption.19}
-\contentsline {table}{\numberline {5.6}{\ignorespaces 四组重叠LFR基准网络生成参数\relax }}{34}{table.caption.20}
+\contentsline {table}{\numberline {4.1}{\ignorespaces 计算机硬件配置\relax }}{38}{table.caption.25}
+\contentsline {table}{\numberline {4.2}{\ignorespaces 计算机软件配置\relax }}{38}{table.caption.26}
+\contentsline {table}{\numberline {4.3}{\ignorespaces 真实网络数据集\relax }}{39}{table.caption.27}
+\contentsline {table}{\numberline {4.4}{\ignorespaces LFR基准网络生成参数及其含义\relax }}{39}{table.caption.28}
+\contentsline {table}{\numberline {4.5}{\ignorespaces 六组LFR基准网络生成参数\relax }}{40}{table.caption.29}
 \addvspace {10.0pt}
 \contentsfinish 

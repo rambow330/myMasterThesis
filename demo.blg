@@ -7,51 +7,51 @@ A level-1 auxiliary file: chapters/chapter1.aux
 A level-1 auxiliary file: chapters/chapter2.aux
 A level-1 auxiliary file: chapters/chapter3.aux
 A level-1 auxiliary file: chapters/chapter4.aux
-A level-1 auxiliary file: chapters/chapter5.aux
 A level-1 auxiliary file: chapters/conclusion.aux
 A level-1 auxiliary file: chapters/thanks.aux
 Database file #1: reference/chap1.bib
 Database file #2: reference/chapter1.bib
 Database file #3: reference/chapter2.bib
+Database file #4: reference/chapter3.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-You've used 36 entries,
+You've used 39 entries,
             3354 wiz_defined-function locations,
-            1002 strings with 12631 characters,
-and the built_in function-call counts, 97735 in all, are:
-= -- 1705
-> -- 13134
-< -- 8600
-+ -- 4615
-- -- 249
-* -- 1189
-:= -- 11177
-add.period$ -- 117
-call.type$ -- 36
-change.case$ -- 72
-chr.to.int$ -- 4150
-cite$ -- 36
-duplicate$ -- 8981
-empty$ -- 1853
-format.name$ -- 268
-if$ -- 21420
-int.to.chr$ -- 1
-int.to.str$ -- 37
+            1020 strings with 13303 characters,
+and the built_in function-call counts, 106756 in all, are:
+= -- 1845
+> -- 14373
+< -- 9411
++ -- 5048
+- -- 271
+* -- 1292
+:= -- 12201
+add.period$ -- 127
+call.type$ -- 39
+change.case$ -- 78
+chr.to.int$ -- 4541
+cite$ -- 39
+duplicate$ -- 9823
+empty$ -- 2003
+format.name$ -- 291
+if$ -- 23387
+int.to.chr$ -- 2
+int.to.str$ -- 40
 missing$ -- 0
-newline$ -- 198
-num.names$ -- 108
-pop$ -- 4463
+newline$ -- 214
+num.names$ -- 117
+pop$ -- 4883
 preamble$ -- 1
-purify$ -- 36
+purify$ -- 39
 quote$ -- 0
-skip$ -- 9130
+skip$ -- 9981
 stack$ -- 0
-substring$ -- 4987
-swap$ -- 36
-text.length$ -- 72
+substring$ -- 5439
+swap$ -- 41
+text.length$ -- 78
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 341
+type$ -- 370
 warning$ -- 0
-while$ -- 173
+while$ -- 187
 width$ -- 0
-write$ -- 550
+write$ -- 595

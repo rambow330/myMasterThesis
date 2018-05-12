@@ -12,9 +12,15 @@
 \contentsline {figure}{\numberline {3.2}{\ignorespaces 标签传播过程示意图\relax }}{22}{figure.caption.11}
 \contentsline {figure}{\numberline {3.3}{\ignorespaces CDABSLP算法流程图\relax }}{24}{figure.caption.12}
 \contentsline {figure}{\numberline {3.4}{\ignorespaces CDABSLP算法标签传播过程示意图\relax }}{25}{figure.caption.13}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces NMI网络示例图\relax }}{30}{figure.caption.19}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces 在S1网络上的实验结果的NMI和PWF比较\relax }}{31}{figure.caption.20}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces 在S2网络上的实验结果的NMI和PWF比较\relax }}{32}{figure.caption.21}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces 在S3网络上的实验结果的NMI和PWF比较\relax }}{32}{figure.caption.21}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces 在S4网络上的实验结果的NMI和PWF比较\relax }}{32}{figure.caption.21}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces 在S5网络上的实验结果的NMI和PWF比较\relax }}{32}{figure.caption.21}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces 在S6网络上的实验结果的NMI和PWF比较\relax }}{32}{figure.caption.21}
 \addvspace {10.0pt}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces OCDABSLP算法流程图\relax }}{30}{figure.caption.14}
-\addvspace {10.0pt}
-\contentsline {figure}{\numberline {5.1}{\ignorespaces NMI网络示例图\relax }}{35}{figure.caption.21}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces OCDABSLP算法流程图\relax }}{37}{figure.caption.24}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces NMI网络示例图\relax }}{41}{figure.caption.30}
 \addvspace {10.0pt}
 \contentsfinish 
