@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.4.17)  13 MAY 2018 02:17
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.4.17)  13 MAY 2018 11:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2347,35 +2347,8 @@ Package: xeCJK-listings 2017/05/15 v3.4.8 xeCJK patch file for listings
 \l__xeCJK_listings_flag_int=\count365
 )
 (./demo.aux (./chapters/abstract.aux) (./chapters/chapter1.aux)
-(./chapters/chapter2.aux) (./chapters/chapter3.aux) (./chapters/chapter4.aux
-
-LaTeX Warning: Label `tab:tab3-1' multiply defined.
-
-
-LaTeX Warning: Label `tab:tab3-2' multiply defined.
-
-
-LaTeX Warning: Label `tab:tab3-3' multiply defined.
-
-
-LaTeX Warning: Label `tab:tab3-4' multiply defined.
-
-
-LaTeX Warning: Label `tab:tab3-5' multiply defined.
-
-
-LaTeX Warning: Label `eqn:modular' multiply defined.
-
-
-LaTeX Warning: Label `fig:fig5-1' multiply defined.
-
-
-LaTeX Warning: Label `eqn:nmi' multiply defined.
-
-
-LaTeX Warning: Label `eqn:n' multiply defined.
-
-) (./chapters/conclusion.aux) (./chapters/thanks.aux))
+(./chapters/chapter2.aux) (./chapters/chapter3.aux) (./chapters/chapter4.aux)
+(./chapters/conclusion.aux) (./chapters/thanks.aux))
 \openout1 = `demo.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
@@ -2953,21 +2926,21 @@ File: figures/S5deNMIhePWF.png Graphic file (type QTm)
 File: figures/S6deNMIhePWF.png Graphic file (type QTm)
  <use  "figures/S6deNMIhePWF.png" >
 
-LaTeX Warning: Float too large for page by 29.66823pt on input line 465.
+LaTeX Warning: Float too large for page by 27.90062pt on input line 465.
 
-[31] [32]) [33]
+[31] [32]) [33] [34]
 \openout2 = `chapters/chapter4.aux'.
 
  (./chapters/chapter4.tex
 第4章
-[34
+[35
 
 
 
-] [35]
+] [36]
 File: figures/fig4-1.png Graphic file (type QTm)
  <use  "figures/fig4-1.png" >
-Overfull \hbox (87.52357pt too wide) in paragraph at lines 91--93
+Overfull \hbox (87.52357pt too wide) in paragraph at lines 94--96
 []\TU/STSong(1)/m/n/12.045 标 签 传 播 过 程 是 不 断 迭 代 执 行 的，|  因 此 整 个 算 法 的 时 间 复 杂
  度 为 $\OT1/cmr/m/n/12.045 2\OML/cmm/m/it/12.045 O\OT1/cmr/m/n/12.045 (\OMS/cmsy
 /m/n/12.045 j\OML/cmm/m/it/12.045 V\OMS/cmsy/m/n/12.045 j\OT1/cmr/m/n/12.045 ) 
@@ -2979,13 +2952,20 @@ cmm/m/it/12.045 V\OMS/cmsy/m/n/12.045 j\OT1/cmr/m/n/12.045 ))$\TU/STSong(1)/m/n
 /12.045 。| 
  []
 
-[36] [37] [38] [39] [40]
-File: figures/fig5-1.png Graphic file (type QTm)
- <use  "figures/fig5-1.png" >) [41]
+[37] [38] [39]
+File: figures/S2deNMIhePWF.png Graphic file (type QTm)
+ <use  "figures/S2deNMIhePWF.png" >
+File: figures/S8ENMI.png Graphic file (type QTm)
+ <use  "figures/S8ENMI.png" >
+File: figures/S9ENMI.png Graphic file (type QTm)
+
+<use  "figures/S9ENMI.png" >
+File: figures/S10ENMI.png Graphic file (type QTm)
+ <use  "figures/S10ENMI.png" >) [40] [41] [42]
 \openout2 = `chapters/conclusion.aux'.
 
 
-(./chapters/conclusion.tex) [42
+(./chapters/conclusion.tex) [43
 
 
 
@@ -3020,7 +3000,7 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-[43
+[44
 
 
 ]
@@ -3034,7 +3014,7 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-[44]
+[45]
 ! Misplaced alignment tab character &.
 l.246 ...Physical Review E Statistical Nonlinear &
                                                    Soft Matter Physics, 2009,
@@ -3045,10 +3025,10 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-) [45]
+) [46]
 \openout2 = `chapters/thanks.aux'.
 
- (./chapters/thanks.tex) [46
+ (./chapters/thanks.tex) [47
 
 
 
@@ -3068,17 +3048,14 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
  ) 
 Here is how much of TeX's memory you used:
- 45515 strings out of 493005
- 924598 string characters out of 6134596
- 946263 words of memory out of 5000000
- 48730 multiletter control sequences out of 15000+600000
+ 45532 strings out of 493005
+ 925023 string characters out of 6134596
+ 947134 words of memory out of 5000000
+ 48744 multiletter control sequences out of 15000+600000
  545829 words of font info for 143 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  63i,12n,78p,10410b,975s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on demo.pdf (57 pages).
+Output written on demo.pdf (58 pages).
