@@ -33,7 +33,7 @@ LPA算法思想简单，容易理解，但是，在多次迭代后，算法并�
  \caption{二分网络中的标签震荡现象}\label{fig:fig3-1}
 \end{figure}
 
-标签传播算法的设计方法简单，容易被人理解接受，算法的执行过程如算法
+标签传播算法的设计方法简单，容易被人理解接受，算法的执行过程如算法\ref{alg:Framwork}
 所示。
 
 算法 ：标签传播算法（LPA） 
@@ -57,6 +57,73 @@ Step2:  标签传播迭代过程
 Step3:  社区划分，将拥有相同标签的节点划分到同一个社区中，不同标签的种类就表示网络中社区的个数。 
  
 LPA 算法每次迭代过程中更新节点的顺序随机确定，并且当多个标签在其邻接点中出现次数最多时，标签的更新也是随机的，因此每次执行标签传播算法都可能得到不同的社区划分结果。在众多的社区划分结果中，很难确定哪一个结果是最优的划分。所以解决标签传播算法的稳定性问题是非常有必要的，而且也是非常重要的。
+
+\begin{algorithm}  
+  \caption{用归并排序求逆序数}  
+  \begin{algorithmic}[1] %每行显示行号  
+      \Require $Array$数组，$n$数组大小  
+      \Ensure 逆序数  
+      \Function {MergerSort}{$Array, left, right$}  
+          \State $result \gets 0$  
+          \If {$left < right$}  
+              \State $middle \gets (left + right) / 2$  
+              \State $result \gets result +$ \Call{MergerSort}{$Array, left, middle$}  
+              \State $result \gets result +$ \Call{MergerSort}{$Array, middle, right$}  
+              \State $result \gets result +$ \Call{Merger}{$Array,left,middle,right$}  
+          \EndIf  
+          \State \Return{$result$}  
+      \EndFunction  
+      \State  
+      \Function{Merger}{$Array, left, middle, right$}  
+          \State $i\gets left$  
+          \State $j\gets middle$  
+          \State $k\gets 0$  
+          \State $result \gets 0$  
+          \While{$i<middle$ \textbf{and} $j<right$}  
+              \If{$Array[i]<Array[j]$}  
+                  \State $B[k++]\gets Array[i++]$  
+              \Else  
+                  \State $B[k++] \gets Array[j++]$  
+                  \State $result \gets result + (middle - i)$  
+              \EndIf  
+          \EndWhile  
+          \While{$i<middle$}  
+              \State $B[k++] \gets Array[i++]$  
+          \EndWhile  
+          \While{$j<right$}  
+              \State $B[k++] \gets Array[j++]$  
+          \EndWhile  
+          \For{$i = 0 \to k-1$}  
+              \State $Array[left + i] \gets B[i]$  
+          \EndFor  
+          \State \Return{$result$}  
+      \EndFunction  
+  \end{algorithmic}  
+\end{algorithm}
+
+\begin{algorithm}[htb]  
+  \caption{ Framework of ensemble learning for our system.}  
+  \label{alg:Framwork}  
+  \begin{algorithmic}[1]  
+    \Require  
+      The set of positive samples for current batch, $P_n$;  
+      The set of unlabelled samples for current batch, $U_n$;  
+      Ensemble of classifiers on former batches, $E_{n-1}$;  
+    \Ensure  
+      Ensemble of classifiers on the current batch, $E_n$;  
+    \State Extracting the set of reliable negative and/or positive samples $T_n$ from $U_n$ with help of $P_n$;  
+    \label{code:fram:extract}  
+    \State Training ensemble of classifiers $E$ on $T_n \cup P_n$, with help of data in former batches;  
+    \label{code:fram:trainbase}  
+    \State $E_n=E_{n-1}cup E$;  
+    \label{code:fram:add}  
+    \State Classifying samples in $U_n-T_n$ by $E_n$;  
+    \label{code:fram:classify}  
+    \State Deleting some weak classifiers in $E_n$ so as to keep the capacity of $E_n$;  
+    \label{code:fram:select} \\  
+    \Return $E_n$;  
+  \end{algorithmic}  
+\end{algorithm}
 
 \section{CDABSLP算法设计}
 \subsection{k-核分解方法}

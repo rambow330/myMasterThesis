@@ -18,29 +18,29 @@
 \contentsline {section}{\numberline {3.1}标签传播算法(LPA)}{18}{section.3.1}
 \contentsline {section}{\numberline {3.2}CDABSLP算法设计}{20}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}k-核分解方法}{20}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}异步标签传播策略}{21}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}核心思想}{22}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}执行步骤}{23}{subsection.3.2.4}
-\contentsline {subsection}{\numberline {3.2.5}时间复杂度分析}{26}{subsection.3.2.5}
-\contentsline {section}{\numberline {3.3}CDABSLP算法验证实验}{26}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}实验环境}{26}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}数据集}{27}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}评价指标}{29}{subsection.3.3.3}
-\contentsline {subsection}{\numberline {3.3.4}实验结果及分析}{31}{subsection.3.3.4}
-\contentsline {subsection}{\numberline {3.3.5}实验总结}{34}{subsection.3.3.5}
-\contentsline {chapter}{\numberline {第4章\hspace {.3em}}基于稳定标签传播的重叠社区发现算法}{35}{chapter.4}
-\contentsline {section}{\numberline {4.1}多标签传播算法(COPRA)}{35}{section.4.1}
-\contentsline {section}{\numberline {4.2}OCDABSLP算法设计}{37}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}核心思想}{37}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}执行步骤}{37}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}时间复杂度分析}{37}{subsection.4.2.3}
-\contentsline {section}{\numberline {4.3}OCDABSLP算法验证实验}{37}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}实验环境}{39}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}数据集}{39}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}评价指标}{39}{subsection.4.3.3}
-\contentsline {subsection}{\numberline {4.3.4}实验结果及分析}{40}{subsection.4.3.4}
-\contentsline {subsection}{\numberline {4.3.5}实验总结}{42}{subsection.4.3.5}
-\contentsline {chapter}{结论}{43}{chapter*.27}
-\contentsline {chapter}{参考文献}{44}{chapter*.28}
-\contentsline {chapter}{致谢}{47}{chapter*.29}
+\contentsline {subsection}{\numberline {3.2.2}异步标签传播策略}{22}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}核心思想}{23}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}执行步骤}{25}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}时间复杂度分析}{27}{subsection.3.2.5}
+\contentsline {section}{\numberline {3.3}CDABSLP算法验证实验}{28}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}实验环境}{28}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}数据集}{28}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}评价指标}{30}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}实验结果及分析}{32}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.5}实验总结}{35}{subsection.3.3.5}
+\contentsline {chapter}{\numberline {第4章\hspace {.3em}}基于稳定标签传播的重叠社区发现算法}{36}{chapter.4}
+\contentsline {section}{\numberline {4.1}多标签传播算法(COPRA)}{36}{section.4.1}
+\contentsline {section}{\numberline {4.2}OCDABSLP算法设计}{38}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}核心思想}{38}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}执行步骤}{38}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}时间复杂度分析}{38}{subsection.4.2.3}
+\contentsline {section}{\numberline {4.3}OCDABSLP算法验证实验}{38}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}实验环境}{40}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}数据集}{40}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}评价指标}{40}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.4}实验结果及分析}{41}{subsection.4.3.4}
+\contentsline {subsection}{\numberline {4.3.5}实验总结}{43}{subsection.4.3.5}
+\contentsline {chapter}{结论}{44}{chapter*.27}
+\contentsline {chapter}{参考文献}{45}{chapter*.28}
+\contentsline {chapter}{致谢}{48}{chapter*.29}
 \contentsfinish 
