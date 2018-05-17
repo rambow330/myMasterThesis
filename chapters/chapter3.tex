@@ -33,97 +33,84 @@ LPA算法思想简单，容易理解，但是，在多次迭代后，算法并�
  \caption{二分网络中的标签震荡现象}\label{fig:fig3-1}
 \end{figure}
 
-标签传播算法的设计方法简单，容易被人理解接受，算法的执行过程如算法\ref{alg:Framwork}
+标签传播算法的设计方法简单，容易被人理解接受，算法的执行过程如算法\ref{alg:LPA}
 所示。
-
-算法 ：标签传播算法（LPA） 
-
-输入：复杂网络 $G = (V, E)$，最大迭代次数 $maxRun$ 
-
-输出：社区划分结果 
-
-Step1:  初始化，为网络中的每个节点分配一个各不相同的标签，$c_i(0)=i$；令迭代次数$t=0$。
-
-Step2:  标签传播迭代过程 
-
-（a）如果迭代次数 $t > maxRun$，标签传播迭代过程结束，转 Step3；否则继续算法。 
-
-（b）随机排列网络中的节点，并将节点顺序存放在向量 X 中。 
-
-（c）对于每个节点$v_i\in X$，更新$c_i(t)=f(c_{i1}(t), c_{i2}(t),..., c_{im}(t))$表示在当次更新过程中节点$v_{i1}, ..., v_{im}$的邻接点中标签已经更新的节点集，表示在当次更新过程中节点的邻接点中标签还未更新的节点集。这里的函数$f(x)$将返回集合中出现频次最高的标签。如果返回不止一个标签，那么就在其中随机选择一个。 
-
-（d）如果所有节点的标签都不再改变，那么标签传播迭代过程停止，转Step3；否则，令$t = t+1$转到步骤（a）继续执行。 
-
-Step3:  社区划分，将拥有相同标签的节点划分到同一个社区中，不同标签的种类就表示网络中社区的个数。 
- 
-LPA 算法每次迭代过程中更新节点的顺序随机确定，并且当多个标签在其邻接点中出现次数最多时，标签的更新也是随机的，因此每次执行标签传播算法都可能得到不同的社区划分结果。在众多的社区划分结果中，很难确定哪一个结果是最优的划分。所以解决标签传播算法的稳定性问题是非常有必要的，而且也是非常重要的。
-
-\begin{algorithm}  
-  \caption{用归并排序求逆序数}  
-  \begin{algorithmic}[1] %每行显示行号  
-      \Require $Array$数组，$n$数组大小  
-      \Ensure 逆序数  
-      \Function {MergerSort}{$Array, left, right$}  
-          \State $result \gets 0$  
-          \If {$left < right$}  
-              \State $middle \gets (left + right) / 2$  
-              \State $result \gets result +$ \Call{MergerSort}{$Array, left, middle$}  
-              \State $result \gets result +$ \Call{MergerSort}{$Array, middle, right$}  
-              \State $result \gets result +$ \Call{Merger}{$Array,left,middle,right$}  
-          \EndIf  
-          \State \Return{$result$}  
-      \EndFunction  
-      \State  
-      \Function{Merger}{$Array, left, middle, right$}  
-          \State $i\gets left$  
-          \State $j\gets middle$  
-          \State $k\gets 0$  
-          \State $result \gets 0$  
-          \While{$i<middle$ \textbf{and} $j<right$}  
-              \If{$Array[i]<Array[j]$}  
-                  \State $B[k++]\gets Array[i++]$  
-              \Else  
-                  \State $B[k++] \gets Array[j++]$  
-                  \State $result \gets result + (middle - i)$  
-              \EndIf  
-          \EndWhile  
-          \While{$i<middle$}  
-              \State $B[k++] \gets Array[i++]$  
-          \EndWhile  
-          \While{$j<right$}  
-              \State $B[k++] \gets Array[j++]$  
-          \EndWhile  
-          \For{$i = 0 \to k-1$}  
-              \State $Array[left + i] \gets B[i]$  
-          \EndFor  
-          \State \Return{$result$}  
-      \EndFunction  
-  \end{algorithmic}  
-\end{algorithm}
-
 \begin{algorithm}[htb]  
-  \caption{ Framework of ensemble learning for our system.}  
-  \label{alg:Framwork}  
+  \caption{标签传播算法（LPA)}  
+  \label{alg:LPA}  
   \begin{algorithmic}[1]  
     \Require  
-      The set of positive samples for current batch, $P_n$;  
-      The set of unlabelled samples for current batch, $U_n$;  
-      Ensemble of classifiers on former batches, $E_{n-1}$;  
+      复杂网络 $G = (V, E)$，最大迭代次数 $maxRun$  
     \Ensure  
-      Ensemble of classifiers on the current batch, $E_n$;  
-    \State Extracting the set of reliable negative and/or positive samples $T_n$ from $U_n$ with help of $P_n$;  
-    \label{code:fram:extract}  
-    \State Training ensemble of classifiers $E$ on $T_n \cup P_n$, with help of data in former batches;  
-    \label{code:fram:trainbase}  
-    \State $E_n=E_{n-1}cup E$;  
-    \label{code:fram:add}  
-    \State Classifying samples in $U_n-T_n$ by $E_n$;  
-    \label{code:fram:classify}  
-    \State Deleting some weak classifiers in $E_n$ so as to keep the capacity of $E_n$;  
-    \label{code:fram:select} \\  
-    \Return $E_n$;  
+      社区划分结果;  
+    \State  初始化，为网络中的每个节点分配一个各不相同的标签，$c_i(0)=i$；
+
+            令迭代次数$t=0$；
+
+    \State  标签传播迭代过程:
+
+            （a）如果迭代次数 $t > maxRun$，标签传播迭代过程结束，转 Step3；否则继续算法；
+
+            （b）随机排列网络中的节点，并将节点顺序存放在向量 X 中；
+
+            （c）对于每个节点$v_i\in X$，更新$c_i(t)=f(c_{i1}(t), c_{i2}(t),..., c_{im}(t))$表示在当次更新过程中节点$v_{i1}, ..., v_{im}$的邻接点中标签已经更新的节点集，表示在当次更新过程中节点的邻接点中标签还未更新的节点集；
+
+            这里的函数$f(x)$将返回集合中出现频次最高的标签；
+
+            如果返回不止一个标签，那么就在其中随机选择一个；
+
+            （d）如果所有节点的标签都不再改变，那么标签传播迭代过程停止，转Step3；
+
+            否则，令$t = t+1$转到步骤（a）继续执行；
+
+    \State 社区划分，将拥有相同标签的节点划分到同一个社区中，不同标签的种类就表示网络中社区的个数。
   \end{algorithmic}  
-\end{algorithm}
+\end{algorithm} 
+
+LPA 算法每次迭代过程中更新节点的顺序随机确定，并且当多个标签在其邻接点中出现次数最多时，标签的更新也是随机的，因此每次执行标签传播算法都可能得到不同的社区划分结果。在众多的社区划分结果中，很难确定哪一个结果是最优的划分。所以解决标签传播算法的稳定性问题是非常有必要的，而且也是非常重要的。
+
+% \begin{algorithm}  
+%   \caption{用归并排序求逆序数}  
+%   \begin{algorithmic}[1] %每行显示行号  
+%       \Require $Array$数组，$n$数组大小  
+%       \Ensure 逆序数  
+%       \Function {MergerSort}{$Array, left, right$}  
+%           \State $result \gets 0$  
+%           \If {$left < right$}  
+%               \State $middle \gets (left + right) / 2$  
+%               \State $result \gets result +$ \Call{MergerSort}{$Array, left, middle$}  
+%               \State $result \gets result +$ \Call{MergerSort}{$Array, middle, right$}  
+%               \State $result \gets result +$ \Call{Merger}{$Array,left,middle,right$}  
+%           \EndIf  
+%           \State \Return{$result$}  
+%       \EndFunction  
+%       \State  
+%       \Function{Merger}{$Array, left, middle, right$}  
+%           \State $i\gets left$  
+%           \State $j\gets middle$  
+%           \State $k\gets 0$  
+%           \State $result \gets 0$  
+%           \While{$i<middle$ \textbf{and} $j<right$}  
+%               \If{$Array[i]<Array[j]$}  
+%                   \State $B[k++]\gets Array[i++]$  
+%               \Else  
+%                   \State $B[k++] \gets Array[j++]$  
+%                   \State $result \gets result + (middle - i)$  
+%               \EndIf  
+%           \EndWhile  
+%           \While{$i<middle$}  
+%               \State $B[k++] \gets Array[i++]$  
+%           \EndWhile  
+%           \While{$j<right$}  
+%               \State $B[k++] \gets Array[j++]$  
+%           \EndWhile  
+%           \For{$i = 0 \to k-1$}  
+%               \State $Array[left + i] \gets B[i]$  
+%           \EndFor  
+%           \State \Return{$result$}  
+%       \EndFunction  
+%   \end{algorithmic}  
+% \end{algorithm}
 
 \section{CDABSLP算法设计}
 \subsection{k-核分解方法}
@@ -181,7 +168,7 @@ k-核分解方法的具体步骤如下：首先不断的将网络中度为 1 的
 法非常敏感，标签传播过程中的随机性不仅造成算法收敛速度的不同，甚至会影响最终的社区划分结果。因此，本章提出一种改进的标签传播算法，克服传统
 标签传播算法的不足。
 
-\subsection{核心思想}
+\subsection{节点影响值}
 在CDABSLP算法中，仍采用异步更新策略来避免图\ref{fig:fig3-1}所示的标签震荡现象的出现。
 但是，不确定的节点更新顺序导致算法的稳定性差，新算法中需要克服此问题。
 在算法每次的更新过程中，先更新的节点的标签在整个标签传播过程中发挥的作
@@ -299,7 +286,11 @@ $2O(|V|)+(2t+1)O(|E|)+O(|V|log(|V|))$，$t $表示迭代次数，一般通过比
 % \subsection{算法伪代码}
 
 \section{CDABSLP算法验证实验}
-本节为本章提出的基于稳定标签传播的非重叠社区发现算法CDABSLP算法进行实验验证。首先介绍实验的软硬件环境和采用的数据集，然后对算法的评价指标进行简单阐述，最后是相关对比实验的结果展示与分析。
+本节为本章提出的基于稳定标签传播的非重叠社区发现算法CDABSLP算法进行实验验证。首先介绍实验的软硬件环境和采用的数据集，然后对算法的评价指标进行简单阐述，最后是相关对比实验的结果展示与分析,将CDABSLP
+算法与传统 LPA、KBLPA\cite{邓观明2016基于混合的} 和 CNM 算法进行比较；将OCDABSLP与原 COPRA
+算法进行比较。由于 LPA、KBLPA 和 COPRA 算法的不稳定性，分别执行这三
+种算法 100 次，取结果的平均值作为最后的实验结果。通过算法得到结果的波动
+范围比较算法的稳定性。 
 
 \subsection{实验环境}
 本文实现的CDABSLP算法所使用的机器配置如表\ref{tab:tab3-1}所示。CDABSLP算法使用Python语言编程实现，均基于Python的复杂网络相关软件包Networkx，使用Anaconda来对软件包进行管理和部署，具体配置如表\ref{tab:tab3-2}所示。
@@ -589,9 +580,52 @@ CDABSLP 算法得到社区结构的模块度 Q 比其他三种算法都高。同
 都没有 LPA 算法好。实验结果表明，CDABSLP 算法能够得到比其他三种算法更
 好更稳定的社区检测结果。
 
+% （3）不同规模网络的实验对比
+
+% 待加入。。。
+
 （3）可视化对比
 
-待加入。。。
+将 CDABSLP 算法在 Dolphins 数据集上检测得到的社区结构和 Dolphins网络
+真实的社区结构进行比较，如图\ref{fig:Dolphins}所示。
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.75\textwidth]{figures/Dolphins}
+  \caption{Dolphins 数据集的社区结构}\label{fig:Dolphins}
+\end{figure}
+
+图\ref{fig:Dolphins}(a)展示的是 Dolphins 网络真实的社区结构，节点不同的颜色表示不
+同社区；图\ref{fig:Dolphins}(b)是 CDABSLP 在 Dolphins 网络上检测到的社区结构图。通过比
+较这两幅图， CDABSLP 算法得到的结果中，节点 DN63 和 SN90 的划分与 Dolphins
+真实的社区结构不同。从 Dolphins 网络的拓扑结构发现，节点 DN63 有两个邻接
+点，它们分别属于两个不同的社区；节点 DN63 有五个邻接点， CDABSLP 算法将
+DN63 划分到了它的多数邻接点所在的社区。Dolphins 网络的真实的社区结构的
+模块度比 CDABSLP 算法得到的社区结构的模块度小，可以看出 CDABSLP 算法得到
+的结果是合理的。
+
+（4）参数选择实验
+
+在 CDABSLP 算法中只有一个参数，即调节参数$\alpha$。为了分析参数对算法的影
+响，设置不同的参数$\alpha$值，在人工网络数据集上运行 CDABSLP 算法，通过比较
+结果的 NMI 分析参数对算法的影响。通过这种方法，能够发现参数$\alpha$取什么值
+时能够得到最好的结果。
+
+生成五个 LFR 基准数据集，参数 avgk 分别从 10 到 50，其他的生成参数相
+同（N = 1000、maxk = 50、minc = 10、maxc = 50 和 mu = 0.1）。图\ref{fig:alpha}显示了
+CDABSLP 算法在这些网络上的实验结果，横轴代表参数$\alpha$的不同取值，从 0 到 1，
+纵轴代表 NMI 值。
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.75\textwidth]{figures/alpha}
+  \caption{Dolphins 数据集的社区结构}\label{fig:alpha}
+\end{figure}
+
+从图\ref{fig:alpha}中可以看出，参数$\alpha$取不同值的情况下，算法得到结果的 NMI 值
+变化很大。但是，对于每个网络，都存在一个最优的$\alpha$值使得 CDABSLP 算法能够
+得到 NMI 值最大的社区划分结果。此外，还能看出，在每个网络上得到的第一
+个极大值基本就是该网络上的最优值。
 
 \subsection{实验总结}
 

@@ -34,26 +34,38 @@ COPRA 通过迭代地更新各个节点的标签及隶属度来获取社区结�
   b_t(l,i)=\frac{\sum_{j\in \Gamma_i }b_{t-1}(l,j)}{d_i}
 \end{equation}
 
-COPRA 算法的执行过程如算法 所示。
+COPRA 算法的执行过程如算法\ref{alg:COPRA}所示。
 
-算法：多标签传播算法（COPRA） 
+\begin{algorithm}[htb]  
+  \caption{多标签传播算法（COPRA）}  
+  \label{alg:COPRA}  
+  \begin{algorithmic}[1]  
+    \Require  
+    复杂网络 $G = (V, E)$，最大迭代次数 $maxRun$   
+    \Ensure  
+      社区划分结果;  
+    \State 初始化，为网络中的每个节点分配一个各不相同的标签，标签-隶属度对集合为${(i,l)}$；
+    
+          令迭代次数$t=0$;  
 
-输入：复杂网络 $G = (V, E)$，最大迭代次数 $maxRun$ 
+    \State 标签传播迭代过程:
 
-输出：社区划分结果 
+    （a）如果迭代次数 $t > maxRun$，标签传播迭代过程结束，转 Step3；
+    
+    否则继续算法。 
 
-Step1:  初始化，为网络中的每个节点分配一个各不相同的标签，标签-隶属度对集合为${(i,l)}$；令迭代次数$t=0$。
+    （b）对于每个节点$v_i\in V$，根据公式\ref{eqn:lishudu}计算该节点属于其邻接点集合中出现的所有标签的隶属度，更新标签-隶属度对列表。
+    
+    根据参数$v$删除不满足条件的标签，并对剩余标签进行归一化。 
+     
+    （c）如果连续两次迭代结束后，标签集合的大小不变，那么标签传播迭代过程停止，
+    转Step3；
+    
+    否则，令$t = t+1$转到步骤（a）继续执行。
 
-Step2:  标签传播迭代过程 
-
-（a）如果迭代次数 $t > maxRun$，标签传播迭代过程结束，转 Step3；否则继续算法。 
-
-（b）对于每个节点$v_i\in V$，根据公式\ref{eqn:lishudu}计算该节点属于其邻接点集合中出现的所有标签的隶属度，更新标签-隶属度对列表。根据参数$v$删除不满足条件的标签，并对剩余标签进行归一化。 
- 
-（c）如果连续两次迭代结束后，标签集合的大小不变，那么标签传播迭代过程停止，
-转Step3；否则，令$t = t+1$转到步骤（a）继续执行。 
-
-Step3:  社区划分，将拥有相同标签的节点划分到同一个社区中，不同标签的种类就表示网络中社区的个数。
+    \State 社区划分，将拥有相同标签的节点划分到同一个社区中，不同标签的种类就表示网络中社区的个数。
+  \end{algorithmic}  
+\end{algorithm} 
 
 COPRA 算法继承了 LPA 算法的优点，也保留了 LPA 算法稳定性和鲁棒性差等缺点。 
 
@@ -170,7 +182,7 @@ COPRA 算法存在随机性，因此取 10 次实验的平均值作为最后的�
 
 \begin{figure}
   \centering
-  \includegraphics[width=0.75\textwidth]{figures/S2deNMIhePWF}
+  \includegraphics[width=0.75\textwidth]{figures/S7ENMI}
   \caption{在S7网络上的实验结果的ENMI和EQ比较}\label{fig:S7ENMI}
 
   \includegraphics[width=0.75\textwidth]{figures/S8ENMI}
