@@ -1,0 +1,268 @@
+\begin{thebibliography}{40}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{#1}
+\providecommand{\href}[2]{#2}
+\providecommand{\doi}[1]{DOI: \href{http://dx.doi.org/#1}{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax\relax\else
+  \urlstyle{same}\fi
+
+\bibitem[Mcpherson\ et~al.(2001)Mcpherson, Smithlovin, and
+  Cook]{Mcpherson2001Birds}
+Mcpherson M, Smithlovin L, Cook J M.
+\newblock Birds of a feather: Homophily in social networks\allowbreak[J].
+\newblock Annual Review of Sociology, 2001, 27\penalty0 (1): 415--444.
+
+\bibitem[Fortunato(2010)]{Fortunato2009Community}
+Fortunato S.
+\newblock Community detection in graphs\allowbreak[J].
+\newblock Physics Reports: A Review Section of Physics Letters (Section C),
+  2010\penalty0 (3/5): 75--174.
+
+\bibitem[Girvan\ et~al.(2002)Girvan and Newman]{2002Community}
+Girvan M, Newman M E J.
+\newblock Community structure in social and biological networks\allowbreak[J].
+\newblock Proceedings of the National Academy of Sciences of the United States
+  of America, 2002\penalty0 (12): 7821--7826.
+
+\bibitem[Newman\ et~al.(2004)Newman and Girvan]{NewmanFind}
+Newman M, Girvan M.
+\newblock Find and evaluating community structure in networks\allowbreak[J].
+\newblock Physical Review E Statistical Nonlinear & Soft Matter Physics, 2004,
+  69\penalty0 (2 Pt 2): 026113--026113.
+
+\bibitem[Raghavan\ et~al.(2007)Raghavan, Albert, and Kumara]{Raghavan2007Near}
+Raghavan U N, Albert R, Kumara S.
+\newblock Near linear time algorithm to detect community structures in
+  large-scale networks\allowbreak[J].
+\newblock Physical Review E Statistical Nonlinear & Soft Matter Physics, 2007,
+  76\penalty0 (3 Pt 2): 036106.
+
+\bibitem[Liu\ et~al.(2016)Liu, Zhu, Lin, Computer, and University]{Liu2016A}
+Liu S C, Zhu F X, Lin G, et~al.
+\newblock A label-propagation-probability-based algorithm for overlapping
+  community detection\allowbreak[J].
+\newblock Chinese Journal of Computers, 2016.
+
+\bibitem[Ford\ et~al.(2009)Ford and Fulkerson]{Jr2009Maximal}
+Ford L R J, Fulkerson D R.
+\newblock Maximal flow through a network\allowbreak[M].
+\newblock [S.l.]: Birkhäuser Boston, 2009: 243--248.
+
+\bibitem[Pothen\ et~al.(1990)Pothen, Simon, and Liou]{Pothen1990Partitioning}
+Pothen A, Simon H D, Liou K P.
+\newblock Partitioning sparse matrices with eigenvectors of
+  graphs\allowbreak[J].
+\newblock Siam J.matrix Anal.appl, 1990, 11\penalty0 (3): 430--452.
+
+\bibitem[Kernigan(1970)]{Kernigan1970An}
+Kernigan R.
+\newblock An efficient heuristic procedure for partitioning
+  graphs\allowbreak[J].
+\newblock Bell System Technical Journal, 1970, 49.
+
+\bibitem[Leskovec(2005)]{Leskovec2005Graphs}
+Leskovec J.
+\newblock Graphs over time: Densification laws, shrinking diameters,
+  explanations and realistic generators\allowbreak[J].
+\newblock Kdd, 2005: 177--187.
+
+\bibitem[Deng\ et~al.(2013)Deng, Li, Zhang, and Xia]{Deng2013Interaction}
+Deng Q, Li Z, Zhang X, et~al.
+\newblock Interaction-based social relationship type identification in
+  microblog\allowbreak[M].
+\newblock [S.l.]: Springer International Publishing, 2013: 151--164.
+
+\bibitem[Natarajan\ et~al.(2013)Natarajan, Sen, and
+  Chaoji]{Natarajan2013Community}
+Natarajan N, Sen P, Chaoji V.
+\newblock Community detection in content-sharing social networks\allowbreak[C].
+\newblock Ieee/acm International Conference on Advances in Social Networks
+  Analysis and Mining.
+\newblock [S.l.: s.n.], 2013: 82--89.
+
+\bibitem[Abdelbary\ et~al.(2014)Abdelbary, Elkorany, and
+  Bahgat]{Abdelbary2014Utilizing}
+Abdelbary H A, Elkorany A M, Bahgat R.
+\newblock Utilizing deep learning for content-based community
+  detection\allowbreak[C].
+\newblock Science and Information Conference.
+\newblock [S.l.: s.n.], 2014: 777--784.
+
+\bibitem[Yin\ et~al.(2012)Yin, Cao, Gu, and Han]{Yin2012Latent}
+Yin Z, Cao L, Gu Q, et~al.
+\newblock Latent community topic analysis:integration of community discovery
+  with topic modeling\allowbreak[J].
+\newblock Acm Transactions on Intelligent Systems & Technology, 2012,
+  3\penalty0 (4): 1--21.
+
+\bibitem[Sachan\ et~al.(2012)Sachan, Contractor, Faruquie, and
+  Subramaniam]{Sachan2012Using}
+Sachan M, Contractor D, Faruquie T A, et~al.
+\newblock Using content and interactions for discovering communities in social
+  networks\allowbreak[C].
+\newblock International Conference on World Wide Web.
+\newblock [S.l.: s.n.], 2012: 331--340.
+
+\bibitem[RosenZvi\ et~al.(2012)RosenZvi, Michal, Griffiths, Thomas, Steyvers,
+  Mark, Smyth, and Padhraic]{RosenZvi2012The}
+RosenZvi, Michal, Griffiths, et~al.
+\newblock The author-topic model for authors and documents\allowbreak[M].
+\newblock [S.l.: s.n.], 2012: 487--494.
+
+\bibitem[Zhou\ et~al.(2006)Zhou, Manavoglu, Li, Giles, and
+  Zha]{Zhou2006Probabilistic}
+Zhou D, Manavoglu E, Li J, et~al.
+\newblock Probabilistic models for discovering e-communities\allowbreak[J].
+\newblock Proc. 15th Int. Conf. on World Wide Web (WWW'06), 2006: 173--182.
+
+\bibitem[Liu\ et~al.(2014)Liu, Chen, Lin, and Wu]{Liu2014Community}
+Liu H, Chen H, Lin M, et~al.
+\newblock Community detection based on topic distance in social tagging
+  networks\allowbreak[J].
+\newblock Telkomnika Indonesian Journal of Electrical Engineering, 2014,
+  12\penalty0 (5).
+
+\bibitem[Peng\ et~al.(2015)Peng, Lei, and Huang]{Peng2015DICH}
+Peng D, Lei X, Huang T.
+\newblock Dich: A framework for discovering implicit communities hidden in
+  tweets\allowbreak[J].
+\newblock World Wide Web-internet & Web Information Systems, 2015, 18\penalty0
+  (4): 795--818.
+
+\bibitem[Yang\ et~al.(2009)Yang, Jin, Chi, and Zhu]{Yang2009Combining}
+Yang T, Jin R, Chi Y, et~al.
+\newblock Combining link and content for community detection: a discriminative
+  approach\allowbreak[C].
+\newblock ACM SIGKDD International Conference on Knowledge Discovery and Data
+  Mining.
+\newblock [S.l.: s.n.], 2009: 927--936.
+
+\bibitem[Cohn\ et~al.(2001)Cohn and Hofmann]{Cohn2001The}
+Cohn D, Hofmann T.
+\newblock The missing link: a probabilistic model of document content and
+  hypertext connectivity\allowbreak[C].
+\newblock International Conference on Neural Information Processing Systems.
+\newblock [S.l.: s.n.], 2001: 409--415.
+
+\bibitem[Getoor\ et~al.(2003)Getoor, Friedman, Koller, and
+  Taskar]{Getoor2003Learning}
+Getoor L, Friedman N, Koller D, et~al.
+\newblock Learning probabilistic models of link structure\allowbreak[J].
+\newblock Journal of Machine Learning Research, 2003, 3\penalty0 (4): 679--707.
+
+\bibitem[Erosheva\ et~al.(2004)Erosheva, Fienberg, and
+  Lafferty]{Erosheva2004Mixed}
+Erosheva E, Fienberg S, Lafferty J.
+\newblock Mixed-membership models of scientific publications\allowbreak[J].
+\newblock Proceedings of the National Academy of Sciences of the United States
+  of America, 2004, 101 Suppl 1\penalty0 (1): 5220.
+
+\bibitem[Nallapati\ et~al.(2008)Nallapati, Ahmed, Xing, and
+  Cohen]{Nallapati2008Joint}
+Nallapati R M, Ahmed A, Xing E P, et~al.
+\newblock Joint latent topic models for text and citations\allowbreak[C].
+\newblock ACM SIGKDD International Conference on Knowledge Discovery and Data
+  Mining, Las Vegas, Nevada, Usa, August.
+\newblock [S.l.: s.n.], 2008: 542--550.
+
+\bibitem[Dietz\ et~al.(2007)Dietz, Bickel, and Scheffer]{Dietz2007Unsupervised}
+Dietz L, Bickel S, Scheffer T.
+\newblock Unsupervised prediction of citation influences\allowbreak[C].
+\newblock International Conference on Machine Learning.
+\newblock [S.l.: s.n.], 2007: 233--240.
+
+\bibitem[Gruber\ et~al.(2008)Gruber, Rosenzvi, and Weiss]{Gruber2008Latent}
+Gruber A, Rosenzvi M, Weiss Y.
+\newblock Latent topic models for hypertext\allowbreak[J].
+\newblock Uai, 2008.
+
+\bibitem[Zhu\ et~al.(2007)Zhu, Yu, Chi, and Gong]{Zhu2007Combining}
+Zhu S, Yu K, Chi Y, et~al.
+\newblock Combining content and link for classification\allowbreak[M].
+\newblock [S.l.: s.n.], 2007: 487--494.
+
+\bibitem[Yu\ et~al.(2008)Yu, Moor, and Moreau]{Yu2008Clustering}
+Yu S, Moor B D, Moreau Y.
+\newblock Clustering by heterogenous data fusion: framework and
+  applications\allowbreak[J].
+\newblock Dec-2008, 2008.
+
+\bibitem[Xie\ et~al.(2013{\natexlab{a}})Xie, Kelley, and
+  Szymanski]{Xie2013Overlapping}
+Xie J, Kelley S, Szymanski B K.
+\newblock Overlapping community detection in networks\allowbreak[M].
+\newblock [S.l.: s.n.], 2013{\natexlab{a}}.
+
+\bibitem[Palla\ et~al.(2005)Palla, Dere~Nyi, Farkas, and
+  Vicsek]{Palla2005Uncovering}
+Palla G, Dere~Nyi I, Farkas I S, et~al.
+\newblock Uncovering the overlapping community structure\allowbreak[M].
+\newblock [S.l.: s.n.], 2005.
+
+\bibitem[Lancichinetti\ et~al.(2012)Lancichinetti, Fortunato, and
+  Kertész]{Lancichinetti2012Detecting}
+Lancichinetti A, Fortunato S, Kertész J.
+\newblock Detecting the overlapping and hierarchical community structure of
+  complex networks\allowbreak[J].
+\newblock New Journal of Physics, 2012, 11\penalty0 (3): 19--44.
+
+\bibitem[Becker\ et~al.(2012)Becker, Robisson, Chapple, Guénoche, and
+  Brun]{Becker2012Multifunctional}
+Becker E, Robisson B, Chapple C E, et~al.
+\newblock Multifunctional proteins revealed by overlapping clustering in
+  protein interaction network\allowbreak[J].
+\newblock Bioinformatics, 2012, 28\penalty0 (1): 84--90.
+
+\bibitem[Magdon-Ismail\ et~al.(2010)Magdon-Ismail and Purnell]{Magdon2010SSDE}
+Magdon-Ismail M, Purnell J.
+\newblock Ssde-cluster: Fast overlapping clustering of networks using sampled
+  spectral distance embedding and gmms\allowbreak[C].
+\newblock IEEE Third International Conference on Privacy, Security, Risk and
+  Trust.
+\newblock [S.l.: s.n.], 2010: 756--759.
+
+\bibitem[Lei\ et~al.(2013)Lei, Wu, Ge, and Zhang]{Lei2013Clustering}
+Lei X, Wu S, Ge L, et~al.
+\newblock Clustering and overlapping modules detection in ppi network based on
+  ibfo\allowbreak[J].
+\newblock Proteomics, 2013, 13\penalty0 (2): 278--290.
+
+\bibitem[Milgram(1967)]{Milgram1967The}
+Milgram S.
+\newblock The small world problem\allowbreak[J].
+\newblock Psychol Today, 1967, 2\penalty0 (1): 185--195.
+
+\bibitem[Watts\ et~al.(1998)Watts and Strogatz]{Watts1998Collectivedynamics}
+Watts D, Strogatz S.
+\newblock Collectivedynamics of ’small-world’ networks\allowbreak[C].
+\newblock Nature.
+\newblock [S.l.: s.n.], 1998: 440--442.
+
+\bibitem[Leung\ et~al.(2009)Leung, Hui, Liò, and Crowcroft]{Leung2009Towards}
+Leung I X Y, Hui P, Liò P, et~al.
+\newblock Towards real-time community detection in large
+  networks\allowbreak[J].
+\newblock Physical Review E Statistical Nonlinear & Soft Matter Physics, 2009,
+  79\penalty0 (6 Pt 2): 066107.
+
+\bibitem[He\ et~al.(2014)He, Leng, Li, Yao, and Chen]{He2014A}
+He M, Leng M, Li F, et~al.
+\newblock A node importance based label propagation approach for community
+  detection\allowbreak[C].
+\newblock the seventh international conference on intelligent system and
+  knowledge engineering, iske 2012/the 1st international conference on
+  cognitive system and information processing, csip 2012.
+\newblock [S.l.: s.n.], 2014.
+
+\bibitem[Xie\ et~al.(2013{\natexlab{b}})Xie and Szymanski]{Xie2013LabelRank}
+Xie J, Szymanski B K.
+\newblock Labelrank: A stabilized label propagation algorithm for community
+  detection in networks\allowbreak[J].
+\newblock ., 2013{\natexlab{b}}: 138--143.
+
+\bibitem[邓观明(2016)]{邓观明2016基于混合的}
+邓观明.
+\newblock 基于混合的k核影响力的标签传播算法\allowbreak[J].
+\newblock 信息通信, 2016\penalty0 (2): 61--63.
+
+\end{thebibliography}
