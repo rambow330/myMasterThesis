@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.4.17)  18 MAY 2018 01:32
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.4.17)  20 MAY 2018 17:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2684,22 +2684,7 @@ LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <15.05624> not available
 
 ]
 Overfull \hbox (4.015pt too wide) in paragraph at lines 68--68
-[]\TU/STHeiti(0)/m/n/16.06 大
- []
-
-
-Overfull \hbox (4.015pt too wide) in paragraph at lines 68--68
-\TU/STHeiti(0)/m/n/16.06 规
- []
-
-
-Overfull \hbox (4.015pt too wide) in paragraph at lines 68--68
-\TU/STHeiti(0)/m/n/16.06 模
- []
-
-
-Overfull \hbox (4.015pt too wide) in paragraph at lines 68--68
-\TU/STHeiti(0)/m/n/16.06 社
+[]\TU/STHeiti(0)/m/n/16.06 社
  []
 
 
@@ -2715,6 +2700,11 @@ Overfull \hbox (4.015pt too wide) in paragraph at lines 68--68
 
 Overfull \hbox (4.015pt too wide) in paragraph at lines 68--68
 \TU/STHeiti(0)/m/n/16.06 络
+ []
+
+
+Overfull \hbox (4.015pt too wide) in paragraph at lines 68--68
+\TU/STHeiti(0)/m/n/16.06 中
  []
 
 
@@ -2971,8 +2961,12 @@ File: figures/S6deNMIhePWF.png Graphic file (type QTm)
 File: figures/Dolphins.png Graphic file (type QTm)
  <use  "figures/Dolphins.png" > [33]
 File: figures/alpha.png Graphic file (type QTm)
- <use  "figures/alpha.png" >)
-[34] [35]
+ <use  "figures/alpha.png" >
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <10.53937> not available
+(Font)              size <10.95> substituted on input line 642.
+
+) [34] [35]
 \openout2 = `chapters/chapter4.aux'.
 
  (./chapters/chapter4.tex
@@ -3100,11 +3094,11 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 46171 strings out of 493005
- 936902 string characters out of 6134596
- 959229 words of memory out of 5000000
- 49355 multiletter control sequences out of 15000+600000
- 547877 words of font info for 156 fonts, out of 8000000 for 9000
+ 46208 strings out of 493005
+ 937873 string characters out of 6134596
+ 959284 words of memory out of 5000000
+ 49384 multiletter control sequences out of 15000+600000
+ 552849 words of font info for 180 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  63i,12n,78p,10410b,975s stack positions out of 5000i,500n,10000p,200000b,80000s
 
