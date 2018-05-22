@@ -43,97 +43,49 @@
     \Ensure  
       社区划分结果;  
     \State  初始化阶段：
-    
+
     （a）标签初始化：为社交网络中的每个节点设置初始标签，设为其节点ID即可；
-    
+
     （b）迭代次数初始化：迭代次数$iter = 0$；
 
     （c）标签改变数初始化：标签改变数量$changedNum = 0$
 
     \State  标签传播阶段:
-
+      
     （a）如果迭代次数$iter > maxIter$，停止标签传播，转步骤3；否则继续算法；
-
+    
     （b）将网络中的节点按照随机顺序加入待更新标签队列；
-
+    
     （c）针对队列中的每个节点，将其节点标签更新为该节点邻居节点中出现次数最多的标签；若最大出现次数标签存在多个，则随机选择其中一个即可；
     
-    //注意此处在邻居节点的标签选择上需要说明的是：在第$iter$轮迭代中，无论邻居节点是否已经在本轮迭代中更新过标签，选择的都是邻居节点第$(iter - 1)$轮中的标签；该更新策略称为同步更新；
-
+    $//$注意此处在邻居节点的标签选择上需要说明的是：在第$iter$轮迭代中，无论邻居节点是否已经在本轮迭代中更新过标签，选择的都是邻居节点第$(iter - 1)$轮中的标签；该更新策略称为同步更新；
+    
     （d）若节点标签进行了修改，标签改变数量$changedNum + 1$；
-
+    
     （e）每轮标签传播迭代完毕，检查标签修改比例$\frac{changedNum}{N}$；若$\frac{changedNum}{N} < stopIterRatio$，则停止标签传播，转步骤3；反之令$(iter = iter+ 1)$，转步骤2，继续下一轮迭代；
-
     \State  社区划分阶段：将具有相同标签的节点划分为一个社区，整个网络中存在的标签数量即是发现的社区数量。
   \end{algorithmic}  
 \end{algorithm} 
 
 标签传播是通过相邻节点之间标签的传递来实现社区的划分的，其能够实现较好划分效果的原因是：在社交网络这种特殊的结构之中，节点之间通过边相连通，边本身就代表着节点间的联系，那么就不难理解，节点之间相邻这一事件本身就说明着在某种意义上它们是具有某种相似的属性的，这在标签传播中表现即是相邻的节点理应拥有相同的标签；而如果某个节点集合中各节点之间都有着复杂的关联，或者说它们在某种属性上可以被划分到同一类别，那么在网络中的表现也就是存在着大量的边在这些节点之间，在标签传播的结果上这些节点也就应当有着相同的标签，这实质上也就是达到了聚类的效果。概括来说，正是因为社交网络自身的结构特性，它能直观地表现各个实体之间的关联以及实体的分布规律。
 
-LPA算法虽然简洁明了易实现，但是也存在着不少缺陷。
+LPA算法虽然简洁明了易实现，但是也存在着一些缺陷使得算法实验结果很不稳定。下面进行详细分析：
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   改到这
-
-LPA算法思想简单，容易理解，但是，在多次迭代后，算法并不能保证收敛。
-在二分网络或近似二分网络中，当算法采用同步标签更新策略时，每个节点根据
-其邻接点在上一次更新后得到的标签计算它本身新的标签，此时可能出现标签震
-荡现象。如图\ref{fig:fig3-1}所示，二分网络中节点的标签在“1”和“2”之间来回震荡，始终不能收敛。因此，Raghavan等人\cite{Raghavan2007Near}又提出了标签的异步更新方法，在第t次迭代过程中，节点根据它的邻接点在当次迭代过程中已经完成标签更新的节点的新标签和还未进行更新的节点在t-1次迭代后得到的标签计算该节点的新标签。通过这种方式能够防止标签震荡现象的发生。
+首先，LPA算法无法保证算法必然收敛。就以算法\ref{alg:LPA}中的提到的最大允许迭代轮数$maxIter$和停止迭代标签修改率$stopIterRatio$而言，这两个参数设置的初衷正是因为LPA算法的不稳定，无法保证算法必然收敛，若不在迭代次数上进行限制，甚至会陷入无限死循环；例如：在含有二分结构的网络之中，标签的传播结果很可能出现来回震荡的现象，如图\ref{fig:fig3-1}中所示，节点标签在“1”和“2”之间来回交替进入了传递死循环，结果始终无法收敛。
 
 \begin{figure}
- \centering
- \includegraphics[width=0.75\textwidth]{figures/fig3-1}
- \caption{二分网络中的标签震荡现象}\label{fig:fig3-1}
-\end{figure}
+  \centering
+  \includegraphics[width=0.75\textwidth]{figures/fig3-1}
+  \caption{二分网络中的标签震荡现象}\label{fig:fig3-1}
+ \end{figure}
 
+ 其次，LPA算法第二个不确定性在于其节点更新顺序的随机性。然而很明显的是节点的更新顺序对最终的结果会有很大的影响，且网络之中的不同节点显然是有着不一样的重要程度的。设想一个本来在网络之中起着至关重要作用的节点，如果碰巧被分在最后一个更新标签，那么本轮更新，该节点对其他节点将不会造成任何影响，这显然不是一个很好的选择；即使这对算法的结果没有过多影响，多多少少也会降低算法的收敛速度。最先将重要的节点进行标签更新，显然有助于加快标签的传播。正是在节点更新顺序上的随机性，使得算法存在着不稳定的因素，因此若想要获取稳定的标签传播，在这一方面的改进是必不可少的。
 
-LPA 算法每次迭代过程中更新节点的顺序随机确定，并且当多个标签在其邻接点中出现次数最多时，标签的更新也是随机的，因此每次执行标签传播算法都可能得到不同的社区划分结果。在众多的社区划分结果中，很难确定哪一个结果是最优的划分。所以解决标签传播算法的稳定性问题是非常有必要的，而且也是非常重要的。
+ 最后，LPA算法第三个不确定性在于其标签选择上随机性。正如算法\ref{alg:LPA}中描述的，当最多出现次数的标签存在多个的时候，随机选择其中一个进行标签更新。很显然当出现多个最大标签时，应该选择的是对自身影响最大的那一个，而不是简简单单的随机选择一个。当然，这就涉及了一个新的问题：对节点之间相互的影响值该如何考量。
 
-通过上面的分析，传统的异步标签传播算法对节点更新的顺序及标签选择方
-法非常敏感，标签传播过程中的随机性不仅造成算法收敛速度的不同，甚至会影响最终的社区划分结果。因此，本章提出一种改进的标签传播算法，克服传统
-标签传播算法的不足。
+ 经过上述分析可见，原始的LPA算法的确存在着不少有待改进的地方。无论是节点的更新顺序还是在标签的选择方式上，其中的随机性不仅可能影响了算法的收敛速度，甚至可能导致最后的社区发现结果也不稳定。因此，对标签传播算法稳定性问题的解决显得非常必要。下文将提出一种改进的LPA算法以克服原始LPA算法的不足。
 
-% \begin{algorithm}  
-%   \caption{用归并排序求逆序数}  
-%   \begin{algorithmic}[1] %每行显示行号  
-%       \Require $Array$数组，$n$数组大小  
-%       \Ensure 逆序数  
-%       \Function {MergerSort}{$Array, left, right$}  
-%           \State $result \gets 0$  
-%           \If {$left < right$}  
-%               \State $middle \gets (left + right) / 2$  
-%               \State $result \gets result +$ \Call{MergerSort}{$Array, left, middle$}  
-%               \State $result \gets result +$ \Call{MergerSort}{$Array, middle, right$}  
-%               \State $result \gets result +$ \Call{Merger}{$Array,left,middle,right$}  
-%           \EndIf  
-%           \State \Return{$result$}  
-%       \EndFunction  
-%       \State  
-%       \Function{Merger}{$Array, left, middle, right$}  
-%           \State $i\gets left$  
-%           \State $j\gets middle$  
-%           \State $k\gets 0$  
-%           \State $result \gets 0$  
-%           \While{$i<middle$ \textbf{and} $j<right$}  
-%               \If{$Array[i]<Array[j]$}  
-%                   \State $B[k++]\gets Array[i++]$  
-%               \Else  
-%                   \State $B[k++] \gets Array[j++]$  
-%                   \State $result \gets result + (middle - i)$  
-%               \EndIf  
-%           \EndWhile  
-%           \While{$i<middle$}  
-%               \State $B[k++] \gets Array[i++]$  
-%           \EndWhile  
-%           \While{$j<right$}  
-%               \State $B[k++] \gets Array[j++]$  
-%           \EndWhile  
-%           \For{$i = 0 \to k-1$}  
-%               \State $Array[left + i] \gets B[i]$  
-%           \EndFor  
-%           \State \Return{$result$}  
-%       \EndFunction  
-%   \end{algorithmic}  
-% \end{algorithm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   改到这
 
 \section{算法稳定性设计}
 \subsection{节点影响值}
@@ -680,3 +632,47 @@ CDABSLP 算法在这些网络上的实验结果，横轴代表参数$\alpha$的�
 
 \section{本章小结}
 本章小结内容凑字数本章小结内容凑字数本章小结内容凑字数本章小结内容凑字数本章小结内容凑字数本章小结内容凑字数本章小结内容凑字数本章小结内容凑字数本章小结内容凑字数本章小结内容凑字数本章小结内容凑字数本章小结内容凑字数本章小结内容凑字数本章小结内容凑字数本章小结内容凑字数本章小结内容凑字数本章小结内容凑字数本章小结内容凑字数本章小结内容凑字数本章小结内容凑字数本章小结内容凑字数本章小结内容凑字数本章小结内容凑字数本章小结内容凑字数本章小结内容凑字数本章小结内容凑字数本章小结内容凑字数本章小结内容凑字数本章小结内容凑字数本章小结内容凑字数本章小结内容凑字数本章小结内容凑字数本章小结内容凑字数本章小结内容凑字数本章小结内容凑字数本章小结内容凑字数本章小结内容凑字数本章小结内容凑字数本章小结内容凑字数本章小结内容凑字数本章小结内容凑字数本章小结内容凑字数
+
+
+% \begin{algorithm}  
+%   \caption{用归并排序求逆序数}  
+%   \begin{algorithmic}[1] %每行显示行号  
+%       \Require $Array$数组，$n$数组大小  
+%       \Ensure 逆序数  
+%       \Function {MergerSort}{$Array, left, right$}  
+%           \State $result \gets 0$  
+%           \If {$left < right$}  
+%               \State $middle \gets (left + right) / 2$  
+%               \State $result \gets result +$ \Call{MergerSort}{$Array, left, middle$}  
+%               \State $result \gets result +$ \Call{MergerSort}{$Array, middle, right$}  
+%               \State $result \gets result +$ \Call{Merger}{$Array,left,middle,right$}  
+%           \EndIf  
+%           \State \Return{$result$}  
+%       \EndFunction  
+%       \State  
+%       \Function{Merger}{$Array, left, middle, right$}  
+%           \State $i\gets left$  
+%           \State $j\gets middle$  
+%           \State $k\gets 0$  
+%           \State $result \gets 0$  
+%           \While{$i<middle$ \textbf{and} $j<right$}  
+%               \If{$Array[i]<Array[j]$}  
+%                   \State $B[k++]\gets Array[i++]$  
+%               \Else  
+%                   \State $B[k++] \gets Array[j++]$  
+%                   \State $result \gets result + (middle - i)$  
+%               \EndIf  
+%           \EndWhile  
+%           \While{$i<middle$}  
+%               \State $B[k++] \gets Array[i++]$  
+%           \EndWhile  
+%           \While{$j<right$}  
+%               \State $B[k++] \gets Array[j++]$  
+%           \EndWhile  
+%           \For{$i = 0 \to k-1$}  
+%               \State $Array[left + i] \gets B[i]$  
+%           \EndFor  
+%           \State \Return{$result$}  
+%       \EndFunction  
+%   \end{algorithmic}  
+% \end{algorithm}s

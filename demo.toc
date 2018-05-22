@@ -17,19 +17,19 @@
 \contentsline {section}{\numberline {2.3}本章小结}{17}{section.2.3}
 \contentsline {chapter}{\numberline {第3章\hspace {.3em}}基于稳定标签传播的非重叠社区发现算法}{19}{chapter.3}
 \contentsline {section}{\numberline {3.1}标签传播算法缺陷分析}{20}{section.3.1}
-\contentsline {section}{\numberline {3.2}算法稳定性设计}{22}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}节点影响值}{22}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}异步标签传播策略}{23}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}节点更新顺序上的改进}{25}{subsection.3.2.3}
+\contentsline {section}{\numberline {3.2}算法稳定性设计}{23}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}节点影响值}{23}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}异步标签传播策略}{24}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}节点更新顺序上的改进}{24}{subsection.3.2.3}
 \contentsline {subsection}{\numberline {3.2.4}标签选择阶段的改进}{25}{subsection.3.2.4}
 \contentsline {section}{\numberline {3.3}算法执行步骤}{26}{section.3.3}
-\contentsline {section}{\numberline {3.4}算法时间复杂度分析}{26}{section.3.4}
-\contentsline {section}{\numberline {3.5}验证实验}{28}{section.3.5}
+\contentsline {section}{\numberline {3.4}算法时间复杂度分析}{28}{section.3.4}
+\contentsline {section}{\numberline {3.5}验证实验}{29}{section.3.5}
 \contentsline {subsection}{\numberline {3.5.1}实验环境}{29}{subsection.3.5.1}
 \contentsline {subsection}{\numberline {3.5.2}数据集}{29}{subsection.3.5.2}
 \contentsline {subsection}{\numberline {3.5.3}评价指标}{31}{subsection.3.5.3}
 \contentsline {subsection}{\numberline {3.5.4}实验结果及分析}{33}{subsection.3.5.4}
-\contentsline {section}{\numberline {3.6}本章小结}{37}{section.3.6}
+\contentsline {section}{\numberline {3.6}本章小结}{38}{section.3.6}
 \contentsline {chapter}{\numberline {第4章\hspace {.3em}}基于稳定标签传播的重叠社区发现算法}{39}{chapter.4}
 \contentsline {section}{\numberline {4.1}多标签传播算法的缺陷分析}{39}{section.4.1}
 \contentsline {section}{\numberline {4.2}算法稳定性设计}{41}{section.4.2}
