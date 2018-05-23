@@ -18,32 +18,33 @@
 \contentsline {chapter}{\numberline {第3章\hspace {.3em}}基于稳定标签传播的非重叠社区发现算法}{19}{chapter.3}
 \contentsline {section}{\numberline {3.1}标签传播算法缺陷分析}{20}{section.3.1}
 \contentsline {section}{\numberline {3.2}算法稳定性设计}{23}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}节点影响值}{23}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}异步标签传播策略}{24}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}节点更新顺序上的改进}{24}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}标签选择阶段的改进}{25}{subsection.3.2.4}
-\contentsline {section}{\numberline {3.3}算法执行步骤}{26}{section.3.3}
-\contentsline {section}{\numberline {3.4}算法时间复杂度分析}{28}{section.3.4}
-\contentsline {section}{\numberline {3.5}验证实验}{29}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}实验环境}{29}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}数据集}{29}{subsection.3.5.2}
-\contentsline {subsection}{\numberline {3.5.3}评价指标}{31}{subsection.3.5.3}
-\contentsline {subsection}{\numberline {3.5.4}实验结果及分析}{33}{subsection.3.5.4}
-\contentsline {section}{\numberline {3.6}本章小结}{38}{section.3.6}
-\contentsline {chapter}{\numberline {第4章\hspace {.3em}}基于稳定标签传播的重叠社区发现算法}{39}{chapter.4}
-\contentsline {section}{\numberline {4.1}多标签传播算法的缺陷分析}{39}{section.4.1}
-\contentsline {section}{\numberline {4.2}算法稳定性设计}{41}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}标签初始化阶段的改进}{41}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}标签选择阶段的改进}{41}{subsection.4.2.2}
-\contentsline {section}{\numberline {4.3}算法执行步骤}{41}{section.4.3}
-\contentsline {section}{\numberline {4.4}算法时间复杂度分析}{44}{section.4.4}
-\contentsline {section}{\numberline {4.5}验证实验}{44}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}实验环境}{44}{subsection.4.5.1}
-\contentsline {subsection}{\numberline {4.5.2}数据集}{44}{subsection.4.5.2}
-\contentsline {subsection}{\numberline {4.5.3}评价指标}{45}{subsection.4.5.3}
-\contentsline {subsection}{\numberline {4.5.4}实验结果及分析}{46}{subsection.4.5.4}
-\contentsline {section}{\numberline {4.6}本章小结}{46}{section.4.6}
-\contentsline {chapter}{结论}{48}{chapter*.31}
-\contentsline {chapter}{参考文献}{49}{chapter*.32}
-\contentsline {chapter}{致谢}{52}{chapter*.33}
+\contentsline {subsection}{\numberline {3.2.1}异步更新标签}{23}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}节点影响值}{26}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}异步标签传播策略}{27}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}节点更新顺序上的改进}{28}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}标签选择阶段的改进}{28}{subsection.3.2.5}
+\contentsline {section}{\numberline {3.3}算法执行步骤}{29}{section.3.3}
+\contentsline {section}{\numberline {3.4}算法时间复杂度分析}{31}{section.3.4}
+\contentsline {section}{\numberline {3.5}验证实验}{32}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}实验环境}{32}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}数据集}{32}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.3}评价指标}{34}{subsection.3.5.3}
+\contentsline {subsection}{\numberline {3.5.4}实验结果及分析}{36}{subsection.3.5.4}
+\contentsline {section}{\numberline {3.6}本章小结}{41}{section.3.6}
+\contentsline {chapter}{\numberline {第4章\hspace {.3em}}基于稳定标签传播的重叠社区发现算法}{42}{chapter.4}
+\contentsline {section}{\numberline {4.1}多标签传播算法的缺陷分析}{42}{section.4.1}
+\contentsline {section}{\numberline {4.2}算法稳定性设计}{44}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}标签初始化阶段的改进}{44}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}标签选择阶段的改进}{44}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}算法执行步骤}{44}{section.4.3}
+\contentsline {section}{\numberline {4.4}算法时间复杂度分析}{47}{section.4.4}
+\contentsline {section}{\numberline {4.5}验证实验}{47}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}实验环境}{47}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}数据集}{47}{subsection.4.5.2}
+\contentsline {subsection}{\numberline {4.5.3}评价指标}{48}{subsection.4.5.3}
+\contentsline {subsection}{\numberline {4.5.4}实验结果及分析}{49}{subsection.4.5.4}
+\contentsline {section}{\numberline {4.6}本章小结}{49}{section.4.6}
+\contentsline {chapter}{结论}{51}{chapter*.33}
+\contentsline {chapter}{参考文献}{52}{chapter*.34}
+\contentsline {chapter}{致谢}{55}{chapter*.35}
 \contentsfinish 

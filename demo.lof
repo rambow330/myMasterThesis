@@ -10,24 +10,26 @@
 \addvspace {10.0pt}
 \contentsline {figure}{\numberline {3.1}{\ignorespaces 节点获取标签的示例图\relax }}{20}{figure.caption.10}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces 二分网络中的标签震荡现象\relax }}{22}{figure.caption.11}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces 标签传播过程示意图\relax }}{25}{figure.caption.12}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces CDABSLP算法流程图\relax }}{27}{figure.caption.13}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces CDABSLP算法标签传播过程示意图\relax }}{28}{figure.caption.14}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces NMI网络示例图\relax }}{32}{figure.caption.20}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces 在S1网络上的实验结果的NMI和PWF比较\relax }}{35}{figure.caption.21}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces 在S2网络上的实验结果的NMI和PWF比较\relax }}{35}{figure.caption.21}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces 在S3网络上的实验结果的NMI和PWF比较\relax }}{35}{figure.caption.21}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces 在S4网络上的实验结果的NMI和PWF比较\relax }}{35}{figure.caption.21}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces 在S5网络上的实验结果的NMI和PWF比较\relax }}{36}{figure.caption.22}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces 在S6网络上的实验结果的NMI和PWF比较\relax }}{36}{figure.caption.22}
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Dolphins 数据集的社区结构\relax }}{37}{figure.caption.25}
-\contentsline {figure}{\numberline {3.14}{\ignorespaces 不同$\alpha $值对结果的影响\relax }}{37}{figure.caption.26}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces 标签同步更新示例图\relax }}{24}{figure.caption.12}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces 标签异步更新示例图\relax }}{25}{figure.caption.13}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces 标签传播过程示意图\relax }}{27}{figure.caption.14}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces CDABSLP算法流程图\relax }}{30}{figure.caption.15}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces CDABSLP算法标签传播过程示意图\relax }}{31}{figure.caption.16}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces NMI网络示例图\relax }}{35}{figure.caption.22}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces 在S1网络上的实验结果的NMI和PWF比较\relax }}{37}{figure.caption.23}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces 在S2网络上的实验结果的NMI和PWF比较\relax }}{37}{figure.caption.23}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces 在S3网络上的实验结果的NMI和PWF比较\relax }}{37}{figure.caption.23}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces 在S4网络上的实验结果的NMI和PWF比较\relax }}{37}{figure.caption.23}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces 在S5网络上的实验结果的NMI和PWF比较\relax }}{38}{figure.caption.24}
+\contentsline {figure}{\numberline {3.14}{\ignorespaces 在S6网络上的实验结果的NMI和PWF比较\relax }}{38}{figure.caption.24}
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Dolphins 数据集的社区结构\relax }}{39}{figure.caption.27}
+\contentsline {figure}{\numberline {3.16}{\ignorespaces 不同$\alpha $值对结果的影响\relax }}{40}{figure.caption.28}
 \addvspace {10.0pt}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces OCDABSLP算法流程图\relax }}{42}{figure.caption.27}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces OCDABSLP算法标签传播过程示意图\relax }}{43}{figure.caption.28}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces 在S7网络上的实验结果的ENMI和EQ比较\relax }}{47}{figure.caption.30}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces 在S8网络上的实验结果的ENMI和EQ比较\relax }}{47}{figure.caption.30}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces 在S9网络上的实验结果的ENMI和EQ比较\relax }}{47}{figure.caption.30}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces 在S10网络上的实验结果的ENMI和EQ比较\relax }}{47}{figure.caption.30}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces OCDABSLP算法流程图\relax }}{45}{figure.caption.29}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces OCDABSLP算法标签传播过程示意图\relax }}{46}{figure.caption.30}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces 在S7网络上的实验结果的ENMI和EQ比较\relax }}{50}{figure.caption.32}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces 在S8网络上的实验结果的ENMI和EQ比较\relax }}{50}{figure.caption.32}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces 在S9网络上的实验结果的ENMI和EQ比较\relax }}{50}{figure.caption.32}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces 在S10网络上的实验结果的ENMI和EQ比较\relax }}{50}{figure.caption.32}
 \addvspace {10.0pt}
 \contentsfinish 
