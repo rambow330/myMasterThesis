@@ -18,45 +18,45 @@ Database file #1: reference/chapter1.bib
 Database file #2: reference/chapter2.bib
 Database file #3: reference/chapter3.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-You've used 41 entries,
+You've used 43 entries,
             3354 wiz_defined-function locations,
-            1032 strings with 13525 characters,
-and the built_in function-call counts, 108298 in all, are:
-= -- 1941
-> -- 14471
-< -- 9493
-+ -- 5109
-- -- 275
-* -- 1338
-:= -- 12412
-add.period$ -- 134
-call.type$ -- 41
-change.case$ -- 82
-chr.to.int$ -- 4567
-cite$ -- 41
-duplicate$ -- 9914
-empty$ -- 2115
-format.name$ -- 295
-if$ -- 23775
+            1046 strings with 13969 characters,
+and the built_in function-call counts, 114989 in all, are:
+= -- 2037
+> -- 15404
+< -- 10099
++ -- 5432
+- -- 293
+* -- 1421
+:= -- 13173
+add.period$ -- 140
+call.type$ -- 43
+change.case$ -- 86
+chr.to.int$ -- 4860
+cite$ -- 43
+duplicate$ -- 10538
+empty$ -- 2212
+format.name$ -- 314
+if$ -- 25221
 int.to.chr$ -- 2
-int.to.str$ -- 42
+int.to.str$ -- 44
 missing$ -- 0
-newline$ -- 225
-num.names$ -- 123
-pop$ -- 4942
+newline$ -- 235
+num.names$ -- 129
+pop$ -- 5252
 preamble$ -- 1
-purify$ -- 41
+purify$ -- 43
 quote$ -- 0
-skip$ -- 10053
+skip$ -- 10687
 stack$ -- 0
-substring$ -- 5527
-swap$ -- 43
-text.length$ -- 82
+substring$ -- 5873
+swap$ -- 45
+text.length$ -- 86
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 389
+type$ -- 409
 warning$ -- 0
-while$ -- 197
+while$ -- 207
 width$ -- 0
-write$ -- 628
+write$ -- 660
 (There was 1 error message)
