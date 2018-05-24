@@ -274,15 +274,15 @@ Kitsak M, Gallos L K, Havlin S, et~al.
   networks\allowbreak[J].
 \newblock Nature Physics, 2010, 6\penalty0 (11): 888--893.
 
-\bibitem[邓观明(2016)]{邓观明2016基于混合的}
-邓观明.
-\newblock 基于混合的k核影响力的标签传播算法\allowbreak[J].
-\newblock 信息通信, 2016\penalty0 (2): 61--63.
-
 \bibitem[Clauset\ et~al.(2004)Clauset, Newman, and Moore]{Clauset2004Finding}
 Clauset A, Newman M E J, Moore C.
 \newblock Finding community structure in very large networks.\allowbreak[J].
 \newblock Phys Rev E Stat Nonlin Soft Matter Phys, 2004, 70\penalty0 (2):
   066111.
+
+\bibitem[邓观明(2016)]{邓观明2016基于混合的}
+邓观明.
+\newblock 基于混合的k核影响力的标签传播算法\allowbreak[J].
+\newblock 信息通信, 2016\penalty0 (2): 61--63.
 
 \end{thebibliography}
