@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.4.17)  24 MAY 2018 21:24
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.4.17)  24 MAY 2018 23:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2861,27 +2861,39 @@ Overfull \hbox (4.015pt too wide) in paragraph at lines 71--71
 
 
 
-]) [2
+]
+Overfull \hbox (20.29143pt too wide) in paragraph at lines 28--29
+[]\TU/TimesNewRoman(0)/m/n/12.045 (1) In order to obtain stable non-overlapping
+ community discovery results, a non-overlapping
+ []
+
+[2
 
 
-] (./demo.toc [3
+]
+Overfull \hbox (20.29143pt too wide) in paragraph at lines 30--31
+[]\TU/TimesNewRoman(0)/m/n/12.045 (2) In order to obtain stable non-overlapping
+ community discovery results, a non-overlapping
+ []
+
+) [3] (./demo.toc [4
 
 
 ])
 \tf@toc=\write5
 \openout5 = `demo.toc'.
 
- [4] (./demo.lof [5
+ [5] (./demo.lof [6
 
 ])
 \tf@lof=\write6
 \openout6 = `demo.lof'.
 
- [6] (./demo.lot)
+ [7] (./demo.lot)
 \tf@lot=\write7
 \openout7 = `demo.lot'.
 
- [7
+ [8
 
 ]
 \openout2 = `chapters/chapter1.aux'.
@@ -3020,11 +3032,11 @@ File: figures/S10ENMI.png Graphic file (type QTm)
 \openout2 = `chapters/conclusion.aux'.
 
 
-(./chapters/conclusion.tex) [56
+(./chapters/conclusion.tex [56
 
 
 
-] (./demo.bbl
+]) [57] (./demo.bbl
 ! Misplaced alignment tab character &.
 l.30 ... Physical Review E Statistical Nonlinear &
                                                    Soft Matter Physics, 2004,
@@ -3055,7 +3067,7 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-[57
+[58
 
 
 ]
@@ -3069,7 +3081,7 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-[58]
+[59]
 ! Misplaced alignment tab character &.
 l.245 ...Physical Review E Statistical Nonlinear &
                                                    Soft Matter Physics, 2009,
@@ -3090,10 +3102,10 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-[59]) [60]
+[60]) [61]
 \openout2 = `chapters/thanks.aux'.
 
- (./chapters/thanks.tex) [61
+ (./chapters/thanks.tex) [62
 
 
 
@@ -3112,12 +3124,12 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 46291 strings out of 493005
- 939351 string characters out of 6134596
+ 46261 strings out of 493005
+ 937410 string characters out of 6134596
  961801 words of memory out of 5000000
- 49460 multiletter control sequences out of 15000+600000
+ 49430 multiletter control sequences out of 15000+600000
  552849 words of font info for 180 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  63i,12n,78p,10410b,1071s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on demo.pdf (73 pages).
+Output written on demo.pdf (75 pages).
