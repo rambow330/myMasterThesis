@@ -595,7 +595,7 @@ CDABSLP算法的时间复杂度情况如下：
 
 （1）真实网络数据上的实验
 
-本章首先对上文介绍的五个真实数据集进行对比实验，采用的评价指标为模块度和NMI。所有数据集最终得到的模块度Q值可参见表{tab:tab3-6}，而由于数据集N5并没有标准网络划分结果，因此无法对其使用NMI评价指标，故$N1 \sim N4$数据集最终得到的NMI值可参见表\ref{tab:tab3-7}。考虑到LPA算法和KBLPA算法实验结果的不稳定性，为了更好地凸显其不稳定的结果，它们的模块度与NMI值将会以均值±最大偏差的形式来展示。
+本节首先对上文介绍的五个真实数据集进行对比实验，采用的评价指标为模块度和NMI。所有数据集最终得到的模块度Q值可参见表{tab:tab3-6}，而由于数据集N5并没有标准网络划分结果，因此无法对其使用NMI评价指标，故$N1 \sim N4$数据集最终得到的NMI值可参见表\ref{tab:tab3-7}。考虑到LPA算法和KBLPA算法实验结果的不稳定性，为了更好地凸显其不稳定的结果，它们的模块度与NMI值将会以均值±最大偏差的形式来展示。
 % 在数据集中介绍的5个真实网络数据集经常出现在社区发现的文献中，使用模块度 Q 和标准化互信息 NMI 作为前四个数据集上实验结果的评价指标，而另外一个数据集上仅使用模块度 Q 作为评价指标。表\ref{tab:tab3-6}和表\ref{tab:tab3-7}给出了四种对比算法在5个真实网络数据集上的实验结果，由于 N5 网络的真实社区结构未知，所以在表 3-8 中仅给出了前四个网络上实验结果的 NMI 值。每个数据集上得到的最优的 Q 和 NMI 值用粗体表示，LPA算法和 CDABSLP 算法得到结果的 Q 和 NMI 以平均值±最大偏差的形式表示。
 
 \begin{table}
@@ -638,44 +638,39 @@ CDABSLP算法的时间复杂度情况如下：
 
 (2)LFR人工基准网络上的实验
 
-图\ref{fig:S1deNMIhePWF} $\sim$ \ref{fig:S6deNMIhePWF}分别是四种算法在六组非重叠 LFR 基准网络数据集
-（S1$\sim$S6）上实验结果的 NMI 和 PWF 指标的对比图。横轴代表混合参数 mu，取
-值从 0.1 到 0.9；左侧六幅图的纵轴代表社区划分结果的 NMI 值，右侧六幅图的
-纵轴表示实验结果的 PWF 值。
+图\ref{fig:S1deNMIhePWF} $\sim$ \ref{fig:S6deNMIhePWF}分别展示的是上文数据集中所提到的利用LFR人工基准网络生成程序生成的6组数据集上的NMI值与PWF值的实验结果对比图。其中，左侧的折线图展示的是NMI值的对比结果，右侧的折线图展示的是PWF值的对比结果，两者的横轴均为混合参数mu。因为LPA算法和KBLPA算法的不稳定性，在折线图中表示这两者的曲线每个横坐标对应着三个值，分别是均值和上下最大偏差值。
+% 图\ref{fig:S1deNMIhePWF} $\sim$ \ref{fig:S6deNMIhePWF}分别是四种算法在六组非重叠 LFR 基准网络数据集（S1$\sim$S6）上实验结果的 NMI 和 PWF 指标的对比图。横轴代表混合参数 mu，取值从 0.1 到 0.9；左侧六幅图的纵轴代表社区划分结果的 NMI 值，右侧六幅图的纵轴表示实验结果的 PWF 值。
 
 \begin{figure}
   \centering
   \includegraphics[width=0.75\textwidth]{figures/S1deNMIhePWF}
-  \caption{在S1网络上的实验结果的NMI和PWF比较}\label{fig:S1deNMIhePWF}
+  \caption{L1网络上实验结果的NMI和PWF比较}\label{fig:S1deNMIhePWF}
 
   \includegraphics[width=0.75\textwidth]{figures/S2deNMIhePWF}
-  \caption{在S2网络上的实验结果的NMI和PWF比较}\label{fig:S2deNMIhePWF}
+  \caption{L2网络上实验结果的NMI和PWF比较}\label{fig:S2deNMIhePWF}
 
   \includegraphics[width=0.75\textwidth]{figures/S3deNMIhePWF}
-  \caption{在S3网络上的实验结果的NMI和PWF比较}\label{fig:S3deNMIhePWF}
+  \caption{L3网络上实验结果的NMI和PWF比较}\label{fig:S3deNMIhePWF}
 
   \includegraphics[width=0.75\textwidth]{figures/S4deNMIhePWF}
-  \caption{在S4网络上的实验结果的NMI和PWF比较}\label{fig:S4deNMIhePWF}
+  \caption{L4网络上实验结果的NMI和PWF比较}\label{fig:S4deNMIhePWF}
 \end{figure}
 
 \begin{figure}
   \centering
   \includegraphics[width=0.75\textwidth]{figures/S5deNMIhePWF}
-  \caption{在S5网络上的实验结果的NMI和PWF比较}\label{fig:S5deNMIhePWF}
+  \caption{L5网络上实验结果的NMI和PWF比较}\label{fig:S5deNMIhePWF}
 
   \includegraphics[width=0.75\textwidth]{figures/S6deNMIhePWF}
-  \caption{在S6网络上的实验结果的NMI和PWF比较}\label{fig:S6deNMIhePWF}
+  \caption{L6网络上实验结果的NMI和PWF比较}\label{fig:S6deNMIhePWF}
 \end{figure}
 
-图\ref{fig:S1deNMIhePWF} $\sim$ \ref{fig:S6deNMIhePWF}中的 12 幅图可以看出，随着 mu 值的增大，网络的结构越来越复杂，
-社区结构越来越不明显，四种算法得到的社区划分结果都随之变差，尤其是当
-mu 大于 0.5 时，NMI 和 PWF 指标下降的更快。但是，整体来看，CDABSLP 算法
-的效果优于其他三种算法。虽然 CDABSLP 算法并不是在所有情况下都能得到最优
-的结果，但是它得到的结果是稳定的并且比较好的。从对比图中还能看出 LPA
-算法得到结果的 NMI 和 PWF 的波动都很大；KBLPA 算法得到的结果是比较稳
-定的，但是该算法检测得到的社区结构比 LPA 和 CDABSLP 算法都要差一些。在
-所有这些 LFR 网络上，CNM 算法并不能检测到最优的社区结构，而且它得到的
-社区的数目通常都比真实情况少。 
+如\ref{fig:S1deNMIhePWF} $\sim$ \ref{fig:S6deNMIhePWF}中所示，所有的曲线都有一个逐渐下滑的趋势。当混合参数mu增大时，网络的社区划分结果开始变差，当混合参数大于0.5的时候，所有曲线都出现一个明显的下滑，这反映的其实是当网络的密度过高时，就很难再发现网络中的社区结构。当几乎所有的节点之间都有联系时，也就不存在了彼此之间联系孰轻孰重的考量。
+
+虽然在这6组数据集上CDABSLP算法的表现也存在着一定的起伏的现象，例如在N1，N3，N4和N6数据集上有着较出色的结果，而在N2数据集上的实验结果并未超过LPA算法，但是整体而言，CDABSLP算法在混合参数mu较小的时候，图中CDABSLP的曲线都较为平滑，表明了CDABSLP算法良好的稳定性，且适应的网络密度范围也较广。在四个算法中，CNM算法对混合参数mu的依赖最大，随着mu的增大，CNM算法的曲线几乎呈正比下滑；而LPA算法虽然在某些次实验中能够取得不错的成绩，但是稳定性最差，上下偏差很大；KBLPA算法在稳定性上有了一定改善，但是依然不够稳定，且划分结果也不能令人满意。
+
+综上所述，CDABSLP算法能够对具有良好社区结构的社交网络进行高质量的社区发现，且能保持良好的稳定性。
+% 图\ref{fig:S1deNMIhePWF} $\sim$ \ref{fig:S6deNMIhePWF}中的 12 幅图可以看出，随着 mu 值的增大，网络的结构越来越复杂，社区结构越来越不明显，四种算法得到的社区划分结果都随之变差，尤其是当mu 大于 0.5 时，NMI 和 PWF 指标下降的更快。但是，整体来看，CDABSLP 算法的效果优于其他三种算法。虽然 CDABSLP 算法并不是在所有情况下都能得到最优的结果，但是它得到的结果是稳定的并且比较好的。从对比图中还能看出 LPA算法得到结果的 NMI 和 PWF 的波动都很大；KBLPA 算法得到的结果是比较稳定的，但是该算法检测得到的社区结构比 LPA 和 CDABSLP 算法都要差一些。在所有这些 LFR 网络上，CNM 算法并不能检测到最优的社区结构，而且它得到的社区的数目通常都比真实情况少。 
 
 
 

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.4.17)  29 MAY 2018 02:06
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.4.17)  29 MAY 2018 03:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2925,22 +2925,23 @@ File: figures/alpha.png Graphic file (type QTm)
  <use  "figures/alpha.png" >
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <10.53937> not available
-(Font)              size <10.95> substituted on input line 717.
+(Font)              size <10.95> substituted on input line 712.
 
+[43]
 File: figures/butongguimowangluobijiao.png Graphic file (type QTm)
-<use  "figures/butongguimowangluobijiao.png" > [43]) [44]
+ <use  "figures/butongguimowangluobijiao.png" >) [44] [45]
 \openout2 = `chapters/chapter4.aux'.
 
 
 (./chapters/chapter4.tex
 第4章
-[45
+[46
 
 
 
-] [46]
+] [47]
 File: figures/ocdabslp.png Graphic file (type QTm)
- <use  "figures/ocdabslp.png" > [47] [48] [49] [50] [51]
+ <use  "figures/ocdabslp.png" > [48] [49] [50] [51] [52]
 File: figures/S7ENMI.png Graphic file (type QTm)
 
 <use  "figures/S7ENMI.png" >
@@ -2950,11 +2951,11 @@ File: figures/S9ENMI.png Graphic file (type QTm)
 
 <use  "figures/S9ENMI.png" >
 File: figures/S10ENMI.png Graphic file (type QTm)
- <use  "figures/S10ENMI.png" > [52] [53]) [54]
+ <use  "figures/S10ENMI.png" > [53] [54]) [55]
 \openout2 = `chapters/conclusion.aux'.
 
 
-(./chapters/conclusion.tex) [55
+(./chapters/conclusion.tex) [56
 
 
 
@@ -2989,7 +2990,7 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-[56
+[57
 
 
 ]
@@ -3003,7 +3004,7 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-[57] [58]
+[58] [59]
 ! Misplaced alignment tab character &.
 l.318 \newblock Physica A Statistical Mechanics &
                                                   Its Applications, 2014,
@@ -3014,7 +3015,7 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-) [59]
+) [60]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 141.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 141.
  (./demo.aux (./chapters/abstract.aux) (./chapters/chapter1.aux)
@@ -3031,10 +3032,10 @@ LaTeX Font Warning: Size substitutions with differences
 Here is how much of TeX's memory you used:
  46035 strings out of 493005
  925756 string characters out of 6134596
- 960012 words of memory out of 5000000
+ 960000 words of memory out of 5000000
  49225 multiletter control sequences out of 15000+600000
  549856 words of font info for 159 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  63i,12n,78p,10410b,1076s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on demo.pdf (68 pages).
+Output written on demo.pdf (69 pages).
