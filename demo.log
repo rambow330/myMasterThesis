@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.4.17)  29 MAY 2018 00:49
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.4.17)  29 MAY 2018 01:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2918,17 +2918,18 @@ File: figures/S5deNMIhePWF.png Graphic file (type QTm)
 <use  "figures/S5deNMIhePWF.png" >
 File: figures/S6deNMIhePWF.png Graphic file (type QTm)
  <use  "figures/S6deNMIhePWF.png" > [39]
-[40]
+[40] [41]
 File: figures/Dolphins.png Graphic file (type QTm)
- <use  "figures/Dolphins.png" > [41]
+ <use  "figures/Dolphins.png" >
 File: figures/alpha.png Graphic file (type QTm)
  <use  "figures/alpha.png" >
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <10.53937> not available
 (Font)              size <10.95> substituted on input line 721.
 
+[42]
 File: figures/butongguimowangluobijiao.png Graphic file (type QTm)
-<use  "figures/butongguimowangluobijiao.png" > [42]) [43] [44]
+ <use  "figures/butongguimowangluobijiao.png" > [43]) [44]
 \openout2 = `chapters/chapter4.aux'.
 
 
@@ -3031,7 +3032,7 @@ LaTeX Font Warning: Size substitutions with differences
 Here is how much of TeX's memory you used:
  46035 strings out of 493005
  925756 string characters out of 6134596
- 960002 words of memory out of 5000000
+ 960003 words of memory out of 5000000
  49225 multiletter control sequences out of 15000+600000
  549856 words of font info for 159 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191

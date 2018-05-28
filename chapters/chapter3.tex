@@ -565,16 +565,16 @@ CDABSLP算法的时间复杂度情况如下：
 
 （3）PWF
 
-成对 F-measure（Pairwise F-measure，PWF）是成对准确率（Pairwise Precision，
-PWP）和成对召回率（Pairwise Recall，PWR）的调和，其计算如公式\ref{eqn:pwf}所示。
+成对F-measure值即Pairwise F-measure值，下文将采用缩写形式PWF来指导该指标。其计算方法具体可参考公式\ref{eqn:pwf}。
+% 成对 F-measure（Pairwise F-measure，PWF）是成对准确率（Pairwise Precision，PWP）和成对召回率（Pairwise Recall，PWR）的调和，其计算如公式\ref{eqn:pwf}所示。
 
 \begin{equation}
   \label{eqn:pwf}
   PWF=\frac{2\cdot PWP\cdot PWR}{PWP+PWR}
 \end{equation}
 
-成对准确率（PWP）和成对召回率（PWR）的计算公式分别为公式\ref{eqn:pwp}和公
-式\ref{eqn:pwr}。
+其中PWP代表的是成对准确率（Pairwise Precision），PWP的计算公式具体可参考公式\ref{eqn:pwp}；而PWR代表的是成对召回率（Pairwise Recall），PWR的计算公式具体可参考公式\ref{eqn:pwr}。
+% 成对准确率（PWP）和成对召回率（PWR）的计算公式分别为公式\ref{eqn:pwp}和公式\ref{eqn:pwr}。
 
 \begin{equation}
   \label{eqn:pwp}
@@ -586,10 +586,10 @@ PWP）和成对召回率（Pairwise Recall，PWR）的调和，其计算如公�
   PWR=\frac{ \left | S \cap T \right |}{ \left | T \right |}
 \end{equation}
 
-T 表示在真实的社区划分结果中，在同一个社区内的节点对集合；S 表示在
-测试算法得到的社区划分结果中在同一个社区内的节点对集合；$\left | S \cap T \right |$ 表示在真实
-的社区划分结果和测试划分结果中都在同一个社区内的节点对集合。PWF 的取
-值范围是 $0 \sim 1$，PWF 越大，说明社区划分的准确率越高。
+其中，T代表着在数据集的正确社区发现结果中属于相同社区的节点对集合，而S代表在经过社区发现算法之后网络的社区划分结果中属于相同社区的节点对集合，$S \cap T $ 即是两者的交集，表示划分正确的节点集合，而对集合S两端加绝对值$\left | S \right |$，表示集合S中的元素个数。
+
+与NMI类似，PWF值的大小同样是与社区划分质量的优劣成正比。
+% T 表示在真实的社区划分结果中，在同一个社区内的节点对集合；S 表示在测试算法得到的社区划分结果中在同一个社区内的节点对集合；$\left | S \cap T \right |$ 表示在真实的社区划分结果和测试划分结果中都在同一个社区内的节点对集合。PWF 的取值范围是 $0 \sim 1$，PWF 越大，说明社区划分的准确率越高。
 
 \subsection{实验结果及分析}
 
