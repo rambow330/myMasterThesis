@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.4.17)  29 MAY 2018 01:17
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.4.17)  29 MAY 2018 02:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2903,9 +2903,9 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [30] [31] [32] [33] [34] [35] [36] [37]
 File: figures/fig5-1.png Graphic file (type QTm)
  <use  "figures/fig5-1.png" > [38]
+[39]
 File: figures/S1deNMIhePWF.png Graphic file (type QTm)
-
-<use  "figures/S1deNMIhePWF.png" >
+ <use  "figures/S1deNMIhePWF.png" >
 File: figures/S2deNMIhePWF.png Graphic file (type QTm)
  <use  "figures/S2deNMIhePWF.png" >
 File: figures/S3deNMIhePWF.png Graphic file (type QTm)
@@ -2917,19 +2917,18 @@ File: figures/S5deNMIhePWF.png Graphic file (type QTm)
 
 <use  "figures/S5deNMIhePWF.png" >
 File: figures/S6deNMIhePWF.png Graphic file (type QTm)
- <use  "figures/S6deNMIhePWF.png" > [39]
-[40] [41]
+ <use  "figures/S6deNMIhePWF.png" >
 File: figures/Dolphins.png Graphic file (type QTm)
- <use  "figures/Dolphins.png" >
+
+<use  "figures/Dolphins.png" > [40] [41] [42]
 File: figures/alpha.png Graphic file (type QTm)
  <use  "figures/alpha.png" >
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <10.53937> not available
-(Font)              size <10.95> substituted on input line 721.
+(Font)              size <10.95> substituted on input line 717.
 
-[42]
 File: figures/butongguimowangluobijiao.png Graphic file (type QTm)
- <use  "figures/butongguimowangluobijiao.png" > [43]) [44]
+<use  "figures/butongguimowangluobijiao.png" > [43]) [44]
 \openout2 = `chapters/chapter4.aux'.
 
 
@@ -3032,7 +3031,7 @@ LaTeX Font Warning: Size substitutions with differences
 Here is how much of TeX's memory you used:
  46035 strings out of 493005
  925756 string characters out of 6134596
- 960003 words of memory out of 5000000
+ 960012 words of memory out of 5000000
  49225 multiletter control sequences out of 15000+600000
  549856 words of font info for 159 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191

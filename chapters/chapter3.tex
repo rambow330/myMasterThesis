@@ -593,7 +593,50 @@ CDABSLP算法的时间复杂度情况如下：
 
 \subsection{实验结果及分析}
 
-(1)LFR基准网络上的实验
+（1）真实网络数据上的实验
+
+本章首先对上文介绍的五个真实数据集进行对比实验，采用的评价指标为模块度和NMI。所有数据集最终得到的模块度Q值可参见表{tab:tab3-6}，而由于数据集N5并没有标准网络划分结果，因此无法对其使用NMI评价指标，故$N1 \sim N4$数据集最终得到的NMI值可参见表\ref{tab:tab3-7}。考虑到LPA算法和KBLPA算法实验结果的不稳定性，为了更好地凸显其不稳定的结果，它们的模块度与NMI值将会以均值±最大偏差的形式来展示。
+% 在数据集中介绍的5个真实网络数据集经常出现在社区发现的文献中，使用模块度 Q 和标准化互信息 NMI 作为前四个数据集上实验结果的评价指标，而另外一个数据集上仅使用模块度 Q 作为评价指标。表\ref{tab:tab3-6}和表\ref{tab:tab3-7}给出了四种对比算法在5个真实网络数据集上的实验结果，由于 N5 网络的真实社区结构未知，所以在表 3-8 中仅给出了前四个网络上实验结果的 NMI 值。每个数据集上得到的最优的 Q 和 NMI 值用粗体表示，LPA算法和 CDABSLP 算法得到结果的 Q 和 NMI 以平均值±最大偏差的形式表示。
+
+\begin{table}
+  \centering
+  \caption{真实网络数据集实验的模块度大小对比} \label{tab:tab3-6}
+  \begin{tabular*}{0.9\textwidth}{@{\extracolsep{\fill}}ccccc}
+  \toprule
+    编号		&LPA  &CNM &KBLPA &CDABSLP \\
+  \midrule
+    N1  &$0.286 \pm 0.28$  &0.355 &$0.083 \pm 0.22$ &0.433 \\
+    N2  &$0.455 \pm 0.18$  &0.316 &$0.499 \pm 0.11$ &0.531 \\
+    N3  &$0.479 \pm 0.14$  &0.275 &$0.459 \pm 0.08$ &0.507 \\
+    N4  &$0.572 \pm 0.13$  &0.547 &$0.583 \pm 0.08$ &0.592 \\
+    N5  &$0.370 \pm 0.26$  &0.425 &$0.293 \pm 0.23$ &0.437 \\
+  \bottomrule
+  \end{tabular*}
+\end{table}
+
+\begin{table}
+  \centering
+  \caption{真实网络数据集实验的NMI大小对比} \label{tab:tab3-7}
+  \begin{tabular*}{0.9\textwidth}{@{\extracolsep{\fill}}ccccc}
+  \toprule
+    编号		&LPA  &CNM &KBLPA &CDABSLP \\
+  \midrule
+    N1  &$0.573 \pm 0.48$  &0.445 &$0.183 \pm 0.33$ &1 \\
+    N2  &$0.516 \pm 0.29$  &0.436 &$0.491 \pm 0.24$ &0.662 \\
+    N3  &$0.564 \pm 0.17$  &0.245 &$0.534 \pm 0.11$ &0.676 \\
+    N4  &$0.853 \pm 0.14$  &0.646 &$0.659 \pm 0.12$ &0.898 \\
+  \bottomrule
+  \end{tabular*}
+\end{table}
+
+从表\ref{tab:tab3-6}中不难看出，四个算法中，CDABSLP算法划分得到的社区计算出的模块度是最大的，且结果相对稳定，这表明了算法在社区划分质量和算法稳定性上均取得了不错的效果。其中KBLPA算法在这几个数据集上的表现并未比LPA算法优化多少，尽管在稳定性上比LPA算法强了一些，但是依然存在着结果不稳定的问题，且整体划分质量反而有所下降；而CNM算法则介于LPA算法、KBLPA算法和CDABSLP算法之间，相对比较中庸，虽然划分质量一般，但是贵在稳定。
+
+在表\ref{tab:tab3-7}中反应的NMI结果来看，CDABSLP算法的优势将显得更加明显。四个数据集上CDABSLP算法均取得了远大于CNM算法的NMI值，而在稳定性上，CDABSLP算法又远胜于另外两种基于标签传播的算法。
+
+综上所述，CDABSLP算法在真实网络数据集上具有较好的稳定性，且发现结果质量良好。
+% 从表\ref{tab:tab3-6}和表\ref{tab:tab3-7}可以看出，CDABSLP 算法得到社区结构的模块度 Q 比其他三种算法都高。同时，CDABSLP 算法在前四个网络上得到的社区结构的 NMI 值也是最优的。KBLPA 算法的稳定性优于 LPA 算法，但是 KBLPA 算法在几乎所有网络上得到社区结构的 Q 和 NMI都没有 LPA 算法好。实验结果表明，CDABSLP 算法能够得到比其他三种算法更好更稳定的社区检测结果。
+
+(2)LFR人工基准网络上的实验
 
 图\ref{fig:S1deNMIhePWF} $\sim$ \ref{fig:S6deNMIhePWF}分别是四种算法在六组非重叠 LFR 基准网络数据集
 （S1$\sim$S6）上实验结果的 NMI 和 PWF 指标的对比图。横轴代表混合参数 mu，取
@@ -634,53 +677,6 @@ mu 大于 0.5 时，NMI 和 PWF 指标下降的更快。但是，整体来看，
 所有这些 LFR 网络上，CNM 算法并不能检测到最优的社区结构，而且它得到的
 社区的数目通常都比真实情况少。 
 
-（2）真实网络上的实验
-
-在数据集中介绍的5个真实网络数据集经常出现在社区发现的文献中，使
-用模块度 Q 和标准化互信息 NMI 作为前四个数据集上实验结果的评价指标，而
-另外一个数据集上仅使用模块度 Q 作为评价指标。 
-表\ref{tab:tab3-6}和表\ref{tab:tab3-7}给出了四种对比算法在5个真实网络数据集上的实验结果，
-由于 N5 网络的真实社区结构未知，所以在表 3-8 中仅给出了前四个网络上
-实验结果的 NMI 值。每个数据集上得到的最优的 Q 和 NMI 值用粗体表示，LPA
-算法和 CDABSLP 算法得到结果的 Q 和 NMI 以平均值±最大偏差的形式表示。
-
-\begin{table}
-  \centering
-  \caption{真实网络的模块度实验结果} \label{tab:tab3-6}
-  \begin{tabular*}{0.9\textwidth}{@{\extracolsep{\fill}}ccccc}
-  \toprule
-    编号		&LPA  &KBLPA &CDABSLP &CNM\\
-  \midrule
-    N1  &$0.296 \pm 0.29$  &$0.073 \pm 0.23$ &0.423 &0.345\\
-    N2  &$0.465 \pm 0.19$  &$0.489 \pm 0.12$ &0.521 &0.306\\
-    N3  &$0.489 \pm 0.15$  &$0.449 \pm 0.09$ &0.497 &0.265\\
-    N4  &$0.582 \pm 0.14$  &$0.573 \pm 0.09$ &0.582 &0.537\\
-    N5  &$0.380 \pm 0.27$  &$0.183 \pm 0.34$ &0.427 &0.415\\
-  \bottomrule
-  \end{tabular*}
-\end{table}
-
-\begin{table}
-  \centering
-  \caption{真实网络的模NMI实验结果} \label{tab:tab3-7}
-  \begin{tabular*}{0.9\textwidth}{@{\extracolsep{\fill}}ccccc}
-  \toprule
-    编号		&LPA  &KBLPA &CDABSLP &CNM\\
-  \midrule
-    N1  &$0.583 \pm 0.58$  &$0.173 \pm 0.53$ &1 &0.435\\
-    N2  &$0.526 \pm 0.19$  &$0.471 \pm 0.22$ &0.622 &0.426\\
-    N3  &$0.574 \pm 0.07$  &$0.524 \pm 0.09$ &0.656 &0.255\\
-    N4  &$0.863 \pm 0.24$  &$0.849 \pm 0.14$ &0.878 &0.636\\
-  \bottomrule
-  \end{tabular*}
-\end{table}
-
-从表\ref{tab:tab3-6}和表\ref{tab:tab3-7}可以看出，
-CDABSLP 算法得到社区结构的模块度 Q 比其他三种算法都高。同时，CDABSLP 算
-法在前四个网络上得到的社区结构的 NMI 值也是最优的。KBLPA 算法的稳定性
-优于 LPA 算法，但是 KBLPA 算法在几乎所有网络上得到社区结构的 Q 和 NMI
-都没有 LPA 算法好。实验结果表明，CDABSLP 算法能够得到比其他三种算法更
-好更稳定的社区检测结果。
 
 
 （3）可视化对比
