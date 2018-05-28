@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.4.17)  29 MAY 2018 00:15
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.4.17)  29 MAY 2018 00:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2900,9 +2900,9 @@ m/n/12.045 5\OML/cmm/m/it/12.045 ; \OT1/cmr/m/n/12.045 6\OMS/cmsy/m/n/12.045 g$
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[30] [31] [32] [33] [34] [35] [36]
+[30] [31] [32] [33] [34] [35] [36] [37]
 File: figures/fig5-1.png Graphic file (type QTm)
- <use  "figures/fig5-1.png" > [37] [38]
+ <use  "figures/fig5-1.png" > [38]
 File: figures/S1deNMIhePWF.png Graphic file (type QTm)
 
 <use  "figures/S1deNMIhePWF.png" >
@@ -2918,18 +2918,17 @@ File: figures/S5deNMIhePWF.png Graphic file (type QTm)
 <use  "figures/S5deNMIhePWF.png" >
 File: figures/S6deNMIhePWF.png Graphic file (type QTm)
  <use  "figures/S6deNMIhePWF.png" > [39]
-[40] [41]
+[40]
 File: figures/Dolphins.png Graphic file (type QTm)
- <use  "figures/Dolphins.png" >
+ <use  "figures/Dolphins.png" > [41]
 File: figures/alpha.png Graphic file (type QTm)
  <use  "figures/alpha.png" >
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <10.53937> not available
-(Font)              size <10.95> substituted on input line 720.
+(Font)              size <10.95> substituted on input line 721.
 
-[42]
 File: figures/butongguimowangluobijiao.png Graphic file (type QTm)
- <use  "figures/butongguimowangluobijiao.png" > [43]) [44]
+<use  "figures/butongguimowangluobijiao.png" > [42]) [43] [44]
 \openout2 = `chapters/chapter4.aux'.
 
 
@@ -3004,11 +3003,22 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-[57] [58]) [59]
+[57] [58]
+! Misplaced alignment tab character &.
+l.318 \newblock Physica A Statistical Mechanics &
+                                                  Its Applications, 2014,
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+) [59]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 141.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 141.
- (./demo.aux (./chapters/abstract.aux) (./chapters/chapter1.aux) (./chapters/ch
-apter2.aux) (./chapters/chapter3.aux) (./chapters/chapter4.aux)
+ (./demo.aux (./chapters/abstract.aux) (./chapters/chapter1.aux)
+(./chapters/chapter2.aux) (./chapters/chapter3.aux) (./chapters/chapter4.aux)
 (./chapters/conclusion.aux))
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 141.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 141.
@@ -3019,10 +3029,10 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 46029 strings out of 493005
- 925434 string characters out of 6134596
- 960013 words of memory out of 5000000
- 49219 multiletter control sequences out of 15000+600000
+ 46035 strings out of 493005
+ 925756 string characters out of 6134596
+ 960002 words of memory out of 5000000
+ 49225 multiletter control sequences out of 15000+600000
  549856 words of font info for 159 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  63i,12n,78p,10410b,1076s stack positions out of 5000i,500n,10000p,200000b,80000s
