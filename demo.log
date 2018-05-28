@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.4.17)  29 MAY 2018 03:44
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.4.17)  29 MAY 2018 04:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2925,7 +2925,7 @@ File: figures/alpha.png Graphic file (type QTm)
  <use  "figures/alpha.png" >
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <10.53937> not available
-(Font)              size <10.95> substituted on input line 704.
+(Font)              size <10.95> substituted on input line 700.
 
 [43]
 File: figures/butongguimowangluobijiao.png Graphic file (type QTm)
