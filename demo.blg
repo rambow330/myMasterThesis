@@ -18,45 +18,45 @@ Repeated entry---line 2 of file reference/chapter4.bib
 I'm skipping whatever remains of this entry
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--empty title in LFR
-You've used 52 entries,
+You've used 51 entries,
             3354 wiz_defined-function locations,
-            1095 strings with 14994 characters,
-and the built_in function-call counts, 131268 in all, are:
-= -- 2417
-> -- 17403
-< -- 11450
-+ -- 6174
-- -- 330
-* -- 1655
-:= -- 15075
-add.period$ -- 170
-call.type$ -- 52
-change.case$ -- 103
-chr.to.int$ -- 5492
-cite$ -- 53
-duplicate$ -- 11965
-empty$ -- 2662
-format.name$ -- 356
-if$ -- 28876
+            1088 strings with 14822 characters,
+and the built_in function-call counts, 129318 in all, are:
+= -- 2374
+> -- 17162
+< -- 11286
++ -- 6086
+- -- 327
+* -- 1630
+:= -- 14847
+add.period$ -- 167
+call.type$ -- 51
+change.case$ -- 101
+chr.to.int$ -- 5413
+cite$ -- 52
+duplicate$ -- 11788
+empty$ -- 2613
+format.name$ -- 353
+if$ -- 28448
 int.to.chr$ -- 2
-int.to.str$ -- 53
+int.to.str$ -- 52
 missing$ -- 0
-newline$ -- 283
-num.names$ -- 156
-pop$ -- 5973
+newline$ -- 278
+num.names$ -- 153
+pop$ -- 5887
 preamble$ -- 1
-purify$ -- 52
+purify$ -- 51
 quote$ -- 0
-skip$ -- 12128
+skip$ -- 11950
 stack$ -- 0
-substring$ -- 6682
-swap$ -- 57
-text.length$ -- 104
+substring$ -- 6575
+swap$ -- 56
+text.length$ -- 102
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 498
+type$ -- 488
 warning$ -- 1
-while$ -- 249
+while$ -- 244
 width$ -- 0
-write$ -- 796
+write$ -- 780
 (There was 1 error message)
