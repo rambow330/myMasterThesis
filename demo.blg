@@ -1,0 +1,62 @@
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: demo.aux
+The style file: GBT7714-2005NLang.bst
+A level-1 auxiliary file: chapters/abstract.aux
+A level-1 auxiliary file: chapters/chapter1.aux
+A level-1 auxiliary file: chapters/chapter2.aux
+A level-1 auxiliary file: chapters/chapter3.aux
+A level-1 auxiliary file: chapters/chapter4.aux
+A level-1 auxiliary file: chapters/conclusion.aux
+Database file #1: reference/chapter1.bib
+Database file #2: reference/chapter2.bib
+Database file #3: reference/chapter3.bib
+Database file #4: reference/chapter4.bib
+Repeated entry---line 2 of file reference/chapter4.bib
+ : @article{Gregory2009Finding
+ :                            ,
+I'm skipping whatever remains of this entry
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Warning--empty title in LFR
+You've used 51 entries,
+            3354 wiz_defined-function locations,
+            1089 strings with 14745 characters,
+and the built_in function-call counts, 127518 in all, are:
+= -- 2361
+> -- 16883
+< -- 11108
++ -- 5994
+- -- 323
+* -- 1622
+:= -- 14656
+add.period$ -- 166
+call.type$ -- 51
+change.case$ -- 101
+chr.to.int$ -- 5325
+cite$ -- 52
+duplicate$ -- 11611
+empty$ -- 2601
+format.name$ -- 348
+if$ -- 28054
+int.to.chr$ -- 2
+int.to.str$ -- 52
+missing$ -- 0
+newline$ -- 277
+num.names$ -- 153
+pop$ -- 5796
+preamble$ -- 1
+purify$ -- 51
+quote$ -- 0
+skip$ -- 11771
+stack$ -- 0
+substring$ -- 6487
+swap$ -- 56
+text.length$ -- 102
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 489
+warning$ -- 1
+while$ -- 244
+width$ -- 0
+write$ -- 780
+(There was 1 error message)
