@@ -324,18 +324,18 @@ Gregory S.
   propagation\allowbreak[J].
 \newblock New Journal of Physics, 2009, 12\penalty0 (10): 2011--2024.
 
-\bibitem[Lancichinetti\ et~al.(2009{\natexlab{b}})Lancichinetti, Fortunato, and
-  Kertész]{Lancichinetti2009Detecting}
-Lancichinetti A, Fortunato S, Kertész J.
-\newblock Detecting the overlapping and hierarchical community structure of
-  complex networks\allowbreak[J].
-\newblock New Journal of Physics, 2009{\natexlab{b}}, 11\penalty0 (3): 19--44.
-
 \bibitem[Lancichinetti\ et~al.(2010)Lancichinetti, Radicchi, Ramasco, and
   Fortunato]{Lancichinetti2010Finding}
 Lancichinetti A, Radicchi F, Ramasco J J, et~al.
 \newblock Finding statistically significant communities in
   networks\allowbreak[J].
 \newblock Plos One, 2010, 6\penalty0 (4): e18961.
+
+\bibitem[Lancichinetti\ et~al.(2009{\natexlab{b}})Lancichinetti, Fortunato, and
+  Kertész]{Lancichinetti2009Detecting}
+Lancichinetti A, Fortunato S, Kertész J.
+\newblock Detecting the overlapping and hierarchical community structure of
+  complex networks\allowbreak[J].
+\newblock New Journal of Physics, 2009{\natexlab{b}}, 11\penalty0 (3): 19--44.
 
 \end{thebibliography}

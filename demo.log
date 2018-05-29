@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.4.17)  29 MAY 2018 09:36
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.4.17)  29 MAY 2018 11:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2970,9 +2970,9 @@ Missing character: There is no 属 in font Times New Roman/OT:script=latn;langua
 e=DFLT;mapping=tex-text;!
 Missing character: There is no 度 in font Times New Roman/OT:script=latn;languag
 e=DFLT;mapping=tex-text;!
- [47]
+ [47] [48]
 File: figures/ocdabslp.png Graphic file (type QTm)
- <use  "figures/ocdabslp.png" > [48] [49] [50] [51] [52]
+ <use  "figures/ocdabslp.png" > [49] [50] [51] [52] [53]
 File: figures/S7ENMI.png Graphic file (type QTm)
 
 <use  "figures/S7ENMI.png" >
@@ -2982,7 +2982,7 @@ File: figures/S9ENMI.png Graphic file (type QTm)
 
 <use  "figures/S9ENMI.png" >
 File: figures/S10ENMI.png Graphic file (type QTm)
- <use  "figures/S10ENMI.png" > [53] [54]) [55]
+ <use  "figures/S10ENMI.png" > [54]) [55]
 \openout2 = `chapters/conclusion.aux'.
 
 
@@ -3063,7 +3063,7 @@ LaTeX Font Warning: Size substitutions with differences
 Here is how much of TeX's memory you used:
  46032 strings out of 493005
  925699 string characters out of 6134596
- 959963 words of memory out of 5000000
+ 959961 words of memory out of 5000000
  49222 multiletter control sequences out of 15000+600000
  549856 words of font info for 159 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191

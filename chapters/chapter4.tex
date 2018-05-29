@@ -89,7 +89,7 @@ OCDABSLP算法采用了同步更新标签的策略，这点与CDABSLP算法不�
 
 \subsection{标签选择阶段的改进}
 
-COPRA算法中存在的最大不稳定因素即是
+COPRA算法中存在的最大不稳定因素即是当发生所有标签隶属度都小于既定阈值的情况，且恰好最大隶属度的标签依然存在多个的时候，会选择随机保留其中一个。针对该随机性进行稳定性改进，不再进行随机选择，而是引入上一章节中提出的标签影响力模型，在重叠社区发现上对其进行扩展，设计了在多标签传播中的标签影响力模型NI，由原来的随机选择，改进为选择NI值大的标签，其计算方式可参考公式\ref{eqn:LI2}。
 % 原始COPRA算法中的唯一一个不稳定因素是当节点属于所有社区的隶属度都小于阈值且最大值有多个时，会随机选择一个标签。因此，在此处对 COPRA算法进行改进。当出现上述情形时，选择隶属度最大的多个标签中标签影响力最大的标签。当标签影响力最大的标签仍有多个时，保留所有标签影响强度最大的标签。标签影响强度的计算如公式\ref{eqn:LI2}所示。
 
 \begin{equation}
@@ -114,7 +114,7 @@ COPRA算法中存在的最大不稳定因素即是
   \item 初始化每个节点的（标签-隶属度）列表为$ \{ (i,1) \} $；
   \item 对网络进行k-核分解，获取所有节点的k-核值$Ks(i)$，并在计算时，将中间过程中统计得出的每个节点的度保留下来以备下一步使用；
   \item 通过节点影响力公式\ref{eqn:NI}在初始化阶段计算每个节点的节点影响力，以备后续计算标签影响力大小使用；
-  \item 将所有节点以节点影响力大小的降序进行排列后加入标签更新队列，节点影响力相同的节点，按照节点ID号升序排列。
+  \item 将所有节点以节点NI值大小降序排列，加入标签更新队列，NI值相同的节点，按照节点ID号升序排列。
 \end{enumerate}
 CDABSLP算法初始化阶段具体可参考算法\ref{alg:OCDABSLPchushihua}。
 
@@ -129,7 +129,7 @@ CDABSLP算法初始化阶段具体可参考算法\ref{alg:OCDABSLPchushihua}。
     \State 初始化每个节点的（标签-隶属度）列表为$ \{ (i,1) \} $;  
     \State 对网络G进行k-核分解，获取所有节点的k-核值$Ks(i)$; 
     \State 通过节点影响力公式计算每个节点的节点影响力; 
-    \State 将所有节点以节点影响力大小的降序进行排列后加入标签更新队列，节点影响力相同的节点，按照节点ID号升序排列; 
+    \State 将所有节点以节点NI值大小降序排列，加入标签更新队列，NI值相同的节点，按照节点ID号升序排列; 
   \end{algorithmic}  
 \end{algorithm}  
 
@@ -179,7 +179,7 @@ OCDABSLP算法的时间复杂度情况如下：
 \begin{itemize}
   \item 所有节点初始化标签所花费的时间为$O(N)$；
   \item 标签迭代中的普通标签传播所花费的时间为$O(v \cdot M \cdot log(v \cdot \frac{M}{N}))$；
-  \item 标签迭代中若遇到节点所属社区的隶属度都小于阈值且最大值有多个时，计算标签影响力所花费的时间为$O(v \cdot M \cdot log(v \cdot \frac{M}{N}))$；
+  \item 标签迭代中计算标签影响力所花费的时间为$O(v \cdot M \cdot log(v \cdot \frac{M}{N}))$；
   \item 社区划分过程所花费的时间为$O(N)$；
 \end{itemize}
 
@@ -199,43 +199,48 @@ OCDABSLP算法的时间复杂度情况如下：
 % $2O(|V|)+2tO(v|E|log(v|E|/|V|))$。
 
 \section{验证实验}
-本节为本章提出的基于稳定标签传播的重叠社区发现算法OCDABSLP算法进行实验验证。首先介绍实验的软硬件环境和采用的数据集，然后对算法的评价指标进行简单阐述，最后是相关对比实验的结果展示与分析。
+
+本小节将为本章提出的OCDABSLP算法进行实验验证。首先介绍实验的软硬件环境和采用的数据集，然后对算法的评价指标进行简单阐述，最后是相关对比实验的结果展示与分析,将OCDABSLP算法与原始COPRA算法进行对比。
 
 \subsection{实验环境}
 本文实现的OCDABSLP算法所使用的软硬件环境与上一章节的CDABSLP算法一致，机器配置如表\ref{tab:tab3-1}所示。OCDABSLP算法使用Python语言编程实现，均基于Python的复杂网络相关软件包Networkx，使用Anaconda来对软件包进行管理和部署，具体配置如表\ref{tab:tab3-2}所示。
 
 \subsection{数据集}
-选用4组不同的LFR基准网络人工生成数据集进行实验验证本章所提算法的有效性。 
 
-LFR基准网络是目前在社区发现领域使用最多的人工数据集之一。通
-过调整网络生成参数可以产生用户需要的不同的人工数据集，LFR 基准网络的主
-要生成参数及其含义在上一章节中已经提及，如表\ref{tab:tab3-4}所示。
+在本章的实验中，将采用LFR基准网络生成人工数据集来对OCDABSLP算法的实验效果进行验证。
+% 选用4组不同的LFR基准网络人工生成数据集进行实验验证本章所提算法的有效性。 
 
-本节实验将生成四组具有重叠社区结构的 LFR 基准网络数据集，详细的生成参数如
-表\ref{tab:tab4-1}示。 
+在上一章节验证实验的数据集介绍部分中已经对LFR人工基准网络进行了简单介绍，其主要设置参数可参考表\ref{tab:tab3-4}。而上一章节中并未使用到其中的on和om两个重叠社区参数，在本章实验中将生成4组含有重叠社区的人工数据集，具体生成参数可参考表\ref{tab:tab4-1}。其中最大节点度maxk和重叠节点个数on均设置为100，故不在表格中列出。
+% LFR基准网络是目前在社区发现领域使用最多的人工数据集之一。通过调整网络生成参数可以产生用户需要的不同的人工数据集，LFR 基准网络的主要生成参数及其含义在上一章节中已经提及，如表\ref{tab:tab3-4}所示。
+
+% 本节实验将生成四组具有重叠社区结构的 LFR 基准网络数据集，详细的生成参数如
+% 表\ref{tab:tab4-1}示。 
 
 \begin{table}
   \centering
-  \caption{四组重叠LFR基准网络生成参数} \label{tab:tab4-1}
-  \begin{tabular*}{0.9\textwidth}{@{\extracolsep{\fill}}ccccccccc}
+  \caption{LFR基准网络在重叠社区数据集上的生成参数} \label{tab:tab4-1}
+  \begin{tabular*}{0.9\textwidth}{@{\extracolsep{\fill}}ccccccc}
   \toprule
-    编号		&N  &avgk &maxk &minc &maxc &mu &on &om\\
+    编号		&N  &avgk  &minc &maxc &mu  &om\\
   \midrule
-    S7	&10000  &15 &500 &10 &500 &0.1 &100 &$2\sim 8$\\
-    S8 &10000  &15 &500 &10 &500 &0.3 &100 &$2\sim 8$\\
-    S9 &50000  &15 &500 &20 &1000 &0.1 &100 &$2\sim 8$\\
-    S10 &50000  &15 &500 &20 &1000 &0.3 &100 &$2\sim 8$\\
+    N7	&1000  &15  &10 &50 &0.1  &$2\sim 8$\\
+    N8 &1000  &15  &10 &50 &0.3  &$2\sim 8$\\
+    N9 &5000  &15  &20 &100 &0.1  &$2\sim 8$\\
+    N10 &5000  &15  &20 &100 &0.3  &$2\sim 8$\\
   \bottomrule
   \end{tabular*}
 \end{table}
 
 \subsection{评价指标}
-本章采用重叠 NMI（ENMI）\cite{Lancichinetti2009Detecting}和重叠模块度 EQ
-\cite{Lancichinetti2010Finding}作为重叠社区发现结果的评价指标。下面介绍这些指标。
 
-（1）EQ
+上一章的实验中采用了模块度和标准化互信息作为评价指标，本章将采用这两项指标在重叠社区上的扩展：重叠模块度和重叠NMI指数作为评价指标。下面介绍这两个指标：
+% 本章采用重叠 NMI（ENMI）\cite{Lancichinetti2009Detecting}和重叠模块度 EQ
+% \cite{Lancichinetti2010Finding}作为重叠社区发现结果的评价指标。下面介绍这些指标。
 
-在上一章节已经提到了模块度的概念，而重叠社区模块度（EQ）\cite{Lancichinetti2010Finding}可以在其公式\ref{eqn:modular}的基础上修改为公式\ref{eqn:modular2}。
+（1）重叠模块度
+
+重叠模块度EQ\cite{Lancichinetti2010Finding}在原始模块度公式\ref{eqn:modular}的基础上修改为公式\ref{eqn:modular2}。
+% 在上一章节已经提到了模块度的概念，而重叠社区模块度（EQ）\cite{Lancichinetti2010Finding}可以在其公式\ref{eqn:modular}的基础上修改为公式\ref{eqn:modular2}。
 
 \begin{equation}
   \label{eqn:modular2}
@@ -244,10 +249,10 @@ LFR基准网络是目前在社区发现领域使用最多的人工数据集之�
 
 在公式\ref{eqn:modular2}中，i和j表示网络中的两个节点，m表示网络中边的数量，$k_i$和$k_j$表示节点i和j的度数，$O_i$和$O_j$表示节点i和j所属的社区的个数，A表示网络的邻居矩阵，$C_k$表示网络的第k个社区。该公式的数学意义为：网络中同一社区内部的边的比例与在同样社区结构下的基准网络内部边的比例的期望值之差。模块度越高，则网络中社区划分结果越好。
 
+（2）重叠ENMI
 
-（2）ENMI
-
-在上一章节已经提到了NMI的概念，而ENMI\cite{Lancichinetti2009Detecting}是在其重叠社区上的扩展，具体计算方式详见公式\ref{eqn:enmi}。
+在上一章节已经提到了NMI的概念，而ENMI\cite{Lancichinetti2009Detecting}是在其重叠社区上的扩展，具体计算方式可参考公式\ref{eqn:enmi}。
+% 在上一章节已经提到了NMI的概念，而ENMI\cite{Lancichinetti2009Detecting}是在其重叠社区上的扩展，具体计算方式详见公式\ref{eqn:enmi}。
 
 \begin{equation}
   \label{eqn:enmi}
@@ -258,35 +263,32 @@ LFR基准网络是目前在社区发现领域使用最多的人工数据集之�
 
 \subsection{实验结果及分析}
 
-（1）人工基准网络上的实验
+（1）LFR人工基准网络上的对比实验
 
-为了验证本章提出的稳定策略用在 COPRA 算法中的效果，进行本组实验，
-将 OCDABSLP 算法与 COPRA 算法进行比较。图\ref{fig:S7ENMI}$\sim$\ref{fig:S10ENMI}中的八幅图分别是
-OCDABSLP 算法和 COPRA 算法在四组重叠 LFR 基准网络数据集（S7$\sim$S10）上
-实验结果的 ENMI 和 EQ 指标的对比图。实验中，参数 v 设置为 om 的值。由于
-COPRA 算法存在随机性，因此取 10 次实验的平均值作为最后的结果。横轴代
-表重叠节点所属的社区个数 om，取值从 2 到 8；左侧四幅图的纵轴代表社区划
-分结果的 ENMI 值，右侧四幅图的纵轴表示实验结果的 EQ 值。 
+图\ref{fig:S7ENMI}$\sim$\ref{fig:S10ENMI}分别展示的是上文数据集中所提到的利用LFR人工基准网络生成程序生成的4组数据集上的ENMI值与EQ值的实验结果对比图。其中，左侧的折线图展示的是ENMI值的对比结果，右侧的折线图展示的是EQ值的对比结果，两者的横轴均为重叠节点最多所属社区个数om，分别从2取到8。因为COPRA算法的不稳定性，在折线图中COPRA算法的值取的是多次实验平均值。在实验之中，既定阈值设置为om的倒数。
+% 为了验证本章提出的稳定策略用在 COPRA 算法中的效果，进行本组实验，将 OCDABSLP 算法与 COPRA 算法进行比较。图\ref{fig:S7ENMI}$\sim$\ref{fig:S10ENMI}中的八幅图分别是OCDABSLP 算法和 COPRA 算法在四组重叠 LFR 基准网络数据集（N7$\sim$N10）上实验结果的 ENMI 和 EQ 指标的对比图。实验中，参数 v 设置为 om 的值。由于COPRA 算法存在随机性，因此取 10 次实验的平均值作为最后的结果。横轴代表重叠节点所属的社区个数 om，取值从 2 到 8；左侧四幅图的纵轴代表社区划分结果的 ENMI 值，右侧四幅图的纵轴表示实验结果的 EQ 值。 
 
 \begin{figure}
   \centering
   \includegraphics[width=0.75\textwidth]{figures/S7ENMI}
-  \caption{在S7网络上的实验结果的ENMI和EQ比较}\label{fig:S7ENMI}
+  \caption{N7网络上实验结果的ENMI和EQ比较}\label{fig:S7ENMI}
 
   \includegraphics[width=0.75\textwidth]{figures/S8ENMI}
-  \caption{在S8网络上的实验结果的ENMI和EQ比较}\label{fig:S8ENMI}
+  \caption{N8网络上实验结果的ENMI和EQ比较}\label{fig:S8ENMI}
 
   \includegraphics[width=0.75\textwidth]{figures/S9ENMI}
-  \caption{在S9网络上的实验结果的ENMI和EQ比较}\label{fig:S9ENMI}
+  \caption{N9网络上实验结果的ENMI和EQ比较}\label{fig:S9ENMI}
 
   \includegraphics[width=0.75\textwidth]{figures/S10ENMI}
-  \caption{在S10网络上的实验结果的ENMI和EQ比较}\label{fig:S10ENMI}
+  \caption{N10网络上实验结果的ENMI和EQ比较}\label{fig:S10ENMI}
 
 \end{figure}
 
-从图\ref{fig:S7ENMI}$\sim$\ref{fig:S10ENMI}中可以看出，ODABSLP 算法不仅能够得到稳定的社区发现结果，
-而且得到的社区结构 ENMI 和 EQ 两个指标都优于 COPRA 算法。验证了本章所
-提方法在重叠社区发现方面能得到比较好的结果。
+从图\ref{fig:S7ENMI}$\sim$\ref{fig:S10ENMI}中可以明显的看出，ODABSLP算法的曲线基本都在COPRA算法曲线之上，且当om值较大时，ODABSLP算法的ENMI值和EQ值的大小都超出COPRA算法很多，这表明ODABSLP算法在实验效果上胜于COPRA算法。尤其是在节点能够属于大于5个社区的情况下，COPRA算法已经无法很好的进行重叠社区发现，图中COPRA算法曲线在om大于5时，有很明显的下滑趋势。而OCDABSLP算法的曲线整体较为平缓，表明om的大小并没有对算法实验效果造成较大的影响。
+
+综上所述，OCDABSLP算法能够对具有重叠社区结构的社交网络进行高质量的重叠社区发现，且保持良好的稳定性。
+
+% 从图\ref{fig:S7ENMI}$\sim$\ref{fig:S10ENMI}中可以看出，ODABSLP 算法不仅能够得到稳定的社区发现结果，而且得到的社区结构 ENMI 和 EQ 两个指标都优于 COPRA 算法。验证了本章所提方法在重叠社区发现方面能得到比较好的结果。
 
 % （2）可视化对比
 
