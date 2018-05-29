@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.4.17)  29 MAY 2018 11:42
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.4.17)  29 MAY 2018 12:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2781,39 +2781,39 @@ Overfull \hbox (4.015pt too wide) in paragraph at lines 71--71
 
 
 
-]
-Overfull \hbox (17.60953pt too wide) in paragraph at lines 28--29
+] [2]
+Overfull \hbox (17.60953pt too wide) in paragraph at lines 27--28
 []\TU/TimesNewRoman(0)/m/n/12.045 (1) In order to obtain stable non-overlapping
  community detection results, a non-overlapping
  []
 
-[2
+[3
 
 
 ]
-Overfull \hbox (17.60953pt too wide) in paragraph at lines 30--31
+Overfull \hbox (17.60953pt too wide) in paragraph at lines 29--30
 []\TU/TimesNewRoman(0)/m/n/12.045 (2) In order to obtain stable non-overlapping
  community detection results, a non-overlapping
  []
 
-) [3] (./demo.toc [4
+) [4] (./demo.toc [5
 
 
 ])
 \tf@toc=\write5
 \openout5 = `demo.toc'.
 
- [5] (./demo.lof [6
+ [6] (./demo.lof [7
 
 ])
 \tf@lof=\write6
 \openout6 = `demo.lof'.
 
- [7] (./demo.lot)
+ [8] (./demo.lot)
 \tf@lot=\write7
 \openout7 = `demo.lot'.
 
- [8
+ [9
 
 ]
 \openout2 = `chapters/chapter1.aux'.
@@ -3063,10 +3063,10 @@ LaTeX Font Warning: Size substitutions with differences
 Here is how much of TeX's memory you used:
  46032 strings out of 493005
  925699 string characters out of 6134596
- 959961 words of memory out of 5000000
+ 959963 words of memory out of 5000000
  49222 multiletter control sequences out of 15000+600000
  549856 words of font info for 159 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  63i,12n,78p,10410b,1076s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on demo.pdf (69 pages).
+Output written on demo.pdf (70 pages).
