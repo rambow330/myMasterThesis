@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1528021052 "/Users/zhujie/Documents/0论文/myPaper/demo.tex" "demo.pdf" "demo" 1528021494
+["pdflatex"] 1528021052 "/Users/zhujie/Documents/0论文/myPaper/demo.tex" "demo.pdf" "demo" 1528022298
   "/Library/Fonts/Songti.ttc" 1506918728 66903940 a9cd359e4cf7fdfcf13db6a1890edad7 ""
   "/Users/zhujie/Documents/0论文/myPaper/demo.tex" 1528014931 3903 433313c2c6ffc2d4be9fe99baef3d5f8 ""
-  "/dev/null" 1528021196 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "/dev/null" 1528022099 0 d41d8cd98f00b204e9800998ecf8427e ""
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1480098701 1288 655e228510b4c2a1abe905c368440826 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr9.tfm" 1480098701 1292 6b21b9c2c7bebb38aa2273f7ca0fb3af ""
@@ -156,5 +156,5 @@
   "demo.aux" 1528021052 8 a94a2480d3289e625eea47cd1b285758 ""
   "demo.tex" 1528014931 3903 433313c2c6ffc2d4be9fe99baef3d5f8 ""
   (generated)
-  "demo.log"
   "demo.pdf"
+  "demo.log"
