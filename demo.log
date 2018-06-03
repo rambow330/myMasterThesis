@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.4.17)  3 JUN 2018 18:39
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.4.17)  3 JUN 2018 19:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2923,42 +2923,11 @@ File: figures/butongguimowangluobijiao.png Graphic file (type QTm)
 
 (./chapters/chapter4.tex
 第4章
-Missing character: There is no 标 in font Times New Roman/OT:script=latn;languag
-e=DFLT;mapping=tex-text;!
-Missing character: There is no 签 in font Times New Roman/OT:script=latn;languag
-e=DFLT;mapping=tex-text;!
-Missing character: There is no 隶 in font Times New Roman/OT:script=latn;languag
-e=DFLT;mapping=tex-text;!
-Missing character: There is no 属 in font Times New Roman/OT:script=latn;languag
-e=DFLT;mapping=tex-text;!
-Missing character: There is no 度 in font Times New Roman/OT:script=latn;languag
-e=DFLT;mapping=tex-text;!
-Missing character: There is no 标 in font Times New Roman/OT:script=latn;languag
-e=DFLT;mapping=tex-text;!
-Missing character: There is no 签 in font Times New Roman/OT:script=latn;languag
-e=DFLT;mapping=tex-text;!
-Missing character: There is no 隶 in font Times New Roman/OT:script=latn;languag
-e=DFLT;mapping=tex-text;!
-Missing character: There is no 属 in font Times New Roman/OT:script=latn;languag
-e=DFLT;mapping=tex-text;!
-Missing character: There is no 度 in font Times New Roman/OT:script=latn;languag
-e=DFLT;mapping=tex-text;!
 [46
 
 
 
-]
-Missing character: There is no 标 in font Times New Roman/OT:script=latn;languag
-e=DFLT;mapping=tex-text;!
-Missing character: There is no 签 in font Times New Roman/OT:script=latn;languag
-e=DFLT;mapping=tex-text;!
-Missing character: There is no 隶 in font Times New Roman/OT:script=latn;languag
-e=DFLT;mapping=tex-text;!
-Missing character: There is no 属 in font Times New Roman/OT:script=latn;languag
-e=DFLT;mapping=tex-text;!
-Missing character: There is no 度 in font Times New Roman/OT:script=latn;languag
-e=DFLT;mapping=tex-text;!
- [47] [48]
+] [47] [48]
 File: figures/ocdabslp.png Graphic file (type QTm)
  <use  "figures/ocdabslp.png" > [49] [50] [51] [52] [53]
 File: figures/S7ENMI.png Graphic file (type QTm)
@@ -2974,11 +2943,11 @@ File: figures/S10ENMI.png Graphic file (type QTm)
 \openout2 = `chapters/conclusion.aux'.
 
 
-(./chapters/conclusion.tex) [56
+(./chapters/conclusion.tex [56
 
 
 
-] (./demo.bbl
+]) [57] (./demo.bbl
 ! Misplaced alignment tab character &.
 l.30 ... Physical Review E Statistical Nonlinear &
                                                    Soft Matter Physics, 2004,
@@ -3009,7 +2978,7 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-[57
+[58
 
 
 ]
@@ -3023,7 +2992,7 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-[58] [59]
+[59] [60]
 ! Misplaced alignment tab character &.
 l.318 \newblock Physica A Statistical Mechanics &
                                                   Its Applications, 2014,
@@ -3034,7 +3003,7 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-) [60]
+) [61]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 141.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 141.
  (./demo.aux (./chapters/abstract.aux) (./chapters/chapter1.aux)
@@ -3057,4 +3026,4 @@ Here is how much of TeX's memory you used:
  1348 hyphenation exceptions out of 8191
  63i,12n,78p,10410b,1076s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on demo.pdf (70 pages).
+Output written on demo.pdf (71 pages).
