@@ -8,6 +8,7 @@ A level-1 auxiliary file: chapters/chapter2.aux
 A level-1 auxiliary file: chapters/chapter3.aux
 A level-1 auxiliary file: chapters/chapter4.aux
 A level-1 auxiliary file: chapters/conclusion.aux
+A level-1 auxiliary file: chapters/thanks.aux
 Database file #1: reference/chapter1.bib
 Database file #2: reference/chapter2.bib
 Database file #3: reference/chapter3.bib
@@ -20,7 +21,7 @@ Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--empty title in LFR
 You've used 51 entries,
             3354 wiz_defined-function locations,
-            1089 strings with 14745 characters,
+            1090 strings with 14764 characters,
 and the built_in function-call counts, 127518 in all, are:
 = -- 2361
 > -- 16883

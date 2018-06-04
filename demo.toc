@@ -49,4 +49,5 @@
 \contentsline {section}{\numberline {4.6}本章小结}{55}{section.4.6}
 \contentsline {chapter}{结论}{56}{chapter*.34}
 \contentsline {chapter}{参考文献}{58}{chapter*.35}
+\contentsline {chapter}{致谢}{62}{chapter*.36}
 \contentsfinish 

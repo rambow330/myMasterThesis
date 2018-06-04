@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.4.17)  3 JUN 2018 19:11
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.4.17)  4 JUN 2018 15:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2382,7 +2382,7 @@ Package: xeCJK-listings 2017/05/15 v3.4.8 xeCJK patch file for listings
 )
 (./demo.aux (./chapters/abstract.aux) (./chapters/chapter1.aux)
 (./chapters/chapter2.aux) (./chapters/chapter3.aux) (./chapters/chapter4.aux)
-(./chapters/conclusion.aux))
+(./chapters/conclusion.aux) (./chapters/thanks.aux))
 \openout1 = `demo.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
@@ -2602,7 +2602,83 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 . - 'normal' (m/n) with NFSS spec.: <->"STHeiti/OT"
 . - 'small caps'  (m/sc) with NFSS spec.: 
 .................................................
+[1
 
+
+
+]
+! Undefined control sequence.
+\makeInfo ... \noindent \BIT@label@classification 
+                                                  } \BIT@value@classificatio...
+l.66 
+     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\makeInfo ...\\ {\heiti \zihao {5} \BIT@label@UDC 
+                                                  } \BIT@value@UDC } \par \b...
+l.66 
+     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--66
+
+ []
+
+*************************************************
+* fontspec warning: "script-not-exist"
+* 
+* Font 'STFangsong' does not contain script 'CJK'.
+*************************************************
+\g__fontspec_family_STFangsong_int=\count380
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font "STFangsong/BI" (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font "STFangsong/B" (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font "STFangsong/I" (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'STFangsong(0)' created for font 'STFangsong' with options
+. [Script={CJK}].
+.  
+.  This font family consists of the following NFSS series/shapes:
+.  
+. - 'normal' (m/n) with NFSS spec.: <->"STFangsong/OT"
+. - 'small caps'  (m/sc) with NFSS spec.: 
+.................................................
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <15.05624> not available
+(Font)              size <14.4> substituted on input line 66.
+
+[2
+
+
+
+] [3
+
+
+
+]
 Overfull \hbox (4.015pt too wide) in paragraph at lines 71--71
 []\TU/STHeiti(0)/m/n/16.06 社
  []
@@ -2702,7 +2778,11 @@ Overfull \hbox (4.015pt too wide) in paragraph at lines 71--71
 \TU/STHeiti(0)/m/n/16.06 学 
  []
 
-[1
+[4
+
+
+
+] [5
 
 
 
@@ -2716,7 +2796,7 @@ Overfull \hbox (4.015pt too wide) in paragraph at lines 71--71
 * Font 'STXihei' does not contain script 'CJK'.
 *  'Latin' script used instead.
 *************************************************
-\g__fontspec_family_STXihei_int=\count380
+\g__fontspec_family_STXihei_int=\count381
 .................................................
 . fontspec info: "no-font-shape"
 . 
@@ -3004,26 +3084,33 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ) [61]
+\openout2 = `chapters/thanks.aux'.
+
+ (./chapters/thanks.tex) [62
+
+
+
+]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 141.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 141.
- (./demo.aux (./chapters/abstract.aux) (./chapters/chapter1.aux)
-(./chapters/chapter2.aux) (./chapters/chapter3.aux) (./chapters/chapter4.aux)
-(./chapters/conclusion.aux))
+ (./demo.aux (./chapters/abstract.aux)
+(./chapters/chapter1.aux) (./chapters/chapter2.aux) (./chapters/chapter3.aux)
+(./chapters/chapter4.aux) (./chapters/conclusion.aux) (./chapters/thanks.aux))
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 141.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 141.
 
 
 LaTeX Font Warning: Size substitutions with differences
-(Font)              up to 0.41063pt have occurred.
+(Font)              up to 0.65625pt have occurred.
 
  ) 
 Here is how much of TeX's memory you used:
- 46032 strings out of 493005
- 925699 string characters out of 6134596
- 959963 words of memory out of 5000000
- 49222 multiletter control sequences out of 15000+600000
- 549856 words of font info for 159 fonts, out of 8000000 for 9000
+ 46266 strings out of 493005
+ 937271 string characters out of 6134596
+ 960855 words of memory out of 5000000
+ 49435 multiletter control sequences out of 15000+600000
+ 552849 words of font info for 180 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  63i,12n,78p,10410b,1076s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on demo.pdf (71 pages).
+Output written on demo.pdf (76 pages).
